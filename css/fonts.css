@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'grotesque-bold';
+  src: url('../assets/fonts/grotesque-bold/BasisGrotesque-bold.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/grotesque-bold/BasisGrotesque-bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/grotesque-bold/BasisGrotesque-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/grotesque-bold/BasisGrotesque-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/grotesque-bold/BasisGrotesque-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/grotesque-bold/BasisGrotesque-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'grotesque-regular';
+  src: url('../assets/fonts/grotesque-regular/BasisGrotesque-regular.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/grotesque-regular/BasisGrotesque-regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/grotesque-regular/BasisGrotesque-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/grotesque-regular/BasisGrotesque-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../assets/fonts/grotesque-regular/BasisGrotesque-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/grotesque-regular/BasisGrotesque-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

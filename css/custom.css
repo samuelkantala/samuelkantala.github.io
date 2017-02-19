@@ -1,0 +1,22 @@
+img {
+  max-width: 100%;
+}
+
+.image {
+  display: block;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.is-16by9 {
+
+}
+
+.is-4by3 {
+
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+  <div class="container">
+    {% for post in site.posts %}
+      <div class="row">
+        <h1>{{ post.title }}</h1>
+        <img class="image is-{{ post.photo-ratio }}" src="{{ post.photo-url }}">
+      </div>
+    {% endfor %}
+  </div>
+</html>
