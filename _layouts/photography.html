@@ -6,7 +6,7 @@
     <!-- Navigation -->
     <nav class="nav">
       <div class="nav-left">
-        <a class="logo">
+        <a class="nav-item">
           {{ site.title }}
         </a>
       </div>
@@ -23,8 +23,11 @@
       </div>
     </nav>
     <!-- End Navigation -->
-    <div class="row">
-      <h1>I’m a Swedish product designer and art director. 2015-2016 I had the joy to work on Spotify Business at Soundtrack Your Brand. Soon relocating to Montreal to join Breather.</h1>
-    </div>
+    {% for post in site.posts %}
+      <div class="row">
+        <h1>{{ post.title }}</h1>
+        <img class="image is-{{ post.photo-ratio }}" src="{{ post.photo-url }}">
+      </div>
+    {% endfor %}
   </div>
 </html>

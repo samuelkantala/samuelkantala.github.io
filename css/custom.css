@@ -20,3 +20,42 @@ img {
 .is-4by3 {
 
 }
+
+
+.nav {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+}
+
+.nav-left, .nav-right {
+  margin-top: 2rem;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+
+@media (min-width: 550px) {
+  .nav-right {
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .nav-left {
+    justify-content: flex-start;
+    width: 50%;
+  }
+}
+
+.nav-item {
+  padding-right: 3rem;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+}
