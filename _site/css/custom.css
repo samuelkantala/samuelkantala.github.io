@@ -8,13 +8,12 @@
 }
 
 .nav-right a {
-  color: #A6A7A9;
+  color: #17181a;
   text-decoration: none;
 }
 
-.nav-right a.selected {
-  color: #17181a;
-  text-decoration: none;
+.active-link {
+  border-bottom: 1px solid #17181a;
 }
 
 .nav-right a:hover, a:focus {
@@ -53,6 +52,7 @@
 .nav-item:first-child, .logo {
   margin-left: -1.5rem;
 }
+
 
 /* Logo */
 

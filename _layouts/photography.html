@@ -4,25 +4,8 @@
 <body>
   <div class="container">
     <!-- Navigation -->
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item">
-          {{ site.title }}
-        </a>
-      </div>
-      <div class="nav-right">
-        <a class="nav-item">
-          Projects
-        </a>
-        <a class="nav-item">
-          Photography
-        </a>
-        <a class="nav-item">
-          About
-        </a>
-      </div>
-    </nav>
-    <!-- End Navigation -->
+    {% include navigation-photography.html %}
+    <!-- End navigation -->
     {% for post in site.posts %}
       <div class="row">
         <h1>{{ post.title }}</h1>
