@@ -40,6 +40,9 @@
     justify-content: flex-start;
     width: 50%;
   }
+  .nav-item:last-child {
+    margin-right: -1.5rem;
+  }
 }
 
 .nav-item, .logo {
@@ -48,11 +51,7 @@
 }
 
 .nav-item:first-child, .logo {
-  padding-left: 0;
-}
-
-.nav-item:last-child {
-  padding-right: 0;
+  margin-left: -1.5rem;
 }
 
 /* Logo */
