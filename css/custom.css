@@ -44,7 +44,11 @@
 
 .nav-item, .logo {
   margin: auto 0 auto 0;
-  padding-right: 3rem;
+  padding: 1rem 1.5rem;
+}
+
+.nav-item:first-child, .logo {
+  padding-left: 0;
 }
 
 .nav-item:last-child {
