@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'Unica-Regular';
-  src: url('../assets/fonts/NeueHaasUnicaPro-Regular.eot'); /* IE9 Compat Modes */
-  src: url('../assets/fonts/NeueHaasUnicaPro-Regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../assets/fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../assets/fonts/NeueHaasUnicaPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../assets/fonts/NeueHaasUnicaPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../assets/fonts/NeueHaasUnicaPro-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'gt_america';
+    src: url('../assets/fonts/gt-america-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/gt-america-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
