@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'gt_america';
-    src: url('../assets/fonts/gt-america-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/gt-america-regular-webfont.woff') format('woff');
+    font-family: 'sans';
+    src: url('../assets/fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'),
+         url('../assets/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
