@@ -1,0 +1,65 @@
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-size: 100%; }
+body {
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #17181a; }
+
+.divider {
+  margin: 0 -2rem;
+  border-bottom: 1px solid #DFE1E6; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0; }
+
+li {
+  margin-bottom: 1rem; }
+
+.list {
+  }
+
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  max-width: 100%; }
+
+.image {
+  display: block;
+  position: relative;
+  margin: 0  -2rem; }
+
+.image img {
+  display: block;
+  height: auto;
+  width: 100%; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400; }
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  letter-spacing: -0.25px }
+
+h2 {
+  font-size: 1.25rem; }
+h3 { }
+h4 { }
