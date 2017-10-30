@@ -1,1 +1,0 @@
-# samuelkantala.github.io
