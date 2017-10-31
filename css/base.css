@@ -7,27 +7,47 @@ html {
 body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: normal;
   font-family: "sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
   color: #17181a; }
 
 .divider {
   margin: 0 -2rem;
-  border-bottom: 1px solid #DFE1E6; }
+  opacity: 0.1;
+  border-bottom: 1px solid #17181A; }
+
+.spacer {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.secondary {
+  opacity: 0.4;
+  display: block; }
 
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 ul {
   list-style: none;
   padding-left: 0;
   margin-top: 0; }
 
 li {
+  font-size: 1rem;
   margin-bottom: 1rem; }
+
+@media only screen and (min-width: 48em) {
+  li {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem; }
+  }
 
 .list {
   }
+
 
 
 /* Images
@@ -47,12 +67,14 @@ img {
   width: 100%; }
 
 
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 h1, h2, h3, h4 {
   margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 400; }
+  margin-bottom: 2.5rem;
+  font-weight: normal; }
 
 h1 {
   font-size: 2rem;
@@ -63,3 +85,18 @@ h2 {
   font-size: 1.25rem; }
 h3 { }
 h4 { }
+
+/* Breakpoints
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* sm */
+@media only screen and (min-width: 48em) {
+  }
+
+/* md */
+@media only screen and (min-width: 64em) {
+  }
+
+/* lg */
+@media only screen and (min-width: 75em) {
+  }
