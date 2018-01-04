@@ -1,7 +1,16 @@
 @font-face {
     font-family: 'sans';
-    src: url('../assets/fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'),
-         url('../assets/fonts/NeueHaasUnicaPro-Regular.woff') format('woff');
+    src: url('../assets/fonts/MaisonNeue-Book.woff2') format('woff2'),
+         url('../assets/fonts/MaisonNeue-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sans2';
+    src: url('../assets/fonts/AtlasGrotesk-Regular.woff2') format('woff2'),
+         url('../assets/fonts/AtlasGrotesk-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

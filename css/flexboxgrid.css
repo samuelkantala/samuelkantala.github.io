@@ -5,6 +5,8 @@
 }
 
 .container-fluid {
+  max-width: 1200px;
+  width: 90%;
   padding-right: 1rem;
   padding-left: 1rem;
 }
