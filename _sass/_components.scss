@@ -1,0 +1,161 @@
+/* header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+
+}
+
+nav {
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  a {
+    text-decoration: none;
+  }
+  a:visited,
+  a:link {
+    text-decoration: none;
+    color: #17181A;
+  }
+}
+
+.brand {
+  letter-spacing: -.025em;
+}
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+  background-color: $primary;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  li {
+    color: #fff;
+    margin: 0.5rem 0;
+  }
+  @include sm {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 2rem 0 0;
+    }
+  }
+}
+
+/* Intro
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  margin: 4rem 0 8rem 0;
+  h1 {
+    font-size: calc(1.5rem + .05*(100vw - 20rem));
+    line-height: 1.25em; }
+  @include sm {
+    h1 {
+      line-height: 1.125em;
+      font-size: calc(3rem + .02*(100vw - 48rem)); }
+  }
+}
+
+.intro a {
+  border-bottom: 1px solid #e1e1e1;
+  color: $primary;
+ @include transition-1;
+  &:hover {
+    border-bottom: 1px solid $accent;
+    color: $primary;
+  }
+}
+
+/* Feed
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project-preview {
+  margin: 0 0 2rem 0;
+  p {
+    &:last-child {
+      color: $secondary;
+    }
+  }
+}
+
+.project-thumb {
+  background-color: #DFE1E5;
+  margin-bottom: 1rem;
+}
+
+.project-thumb img {
+  display: block;
+  object-fit: fill;
+  height: auto;
+  width: 100%;
+}
+
+/* Project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project {
+
+}
+
+.project-cover {
+  height: 24rem;
+  width: 100%;
+  background-color: #EFF0F2;
+  @include sm {
+    height: 32rem; }
+  img {
+    height: 100%;
+    object-fit: cover; }
+}
+
+.project-content {
+}
+
+.project-name {
+  padding: 2rem 0;
+  @include sm {
+    padding: 3rem 0; }
+}
+
+.project-meta {
+  li {
+    margin: 0; }
+}
+
+.project-paragraphs {
+  p {
+    margin-bottom: 2rem; }
+}
+
+
+
+/* Next project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.next-project {
+  border-top: 1px solid #DFE1E5;
+  padding: 6rem 0;
+  margin: 2rem 0;
+  p {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,159 @@
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: normal;
+  font-family: "sans2", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+  color: $primary; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  -moz-font-feature-settings:"kern" 1;
+  -ms-font-feature-settings:"kern" 1;
+  -o-font-feature-settings:"kern" 1;
+  -webkit-font-feature-settings:"kern" 1;
+  font-feature-settings:"kern" 1;
+  font-kerning: normal; }
+
+h1,
+h2,
+h3 {
+  line-height: 1.125em;
+  font-weight: normal;
+  letter-spacing: -.025em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+@include sm {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@include md {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+}
+
+/* Breakpoints
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* sm */
+@media only screen and (min-width: 48em) {
+  }
+
+/* md */
+@media only screen and (min-width: 64em) {
+  }
+
+/* lg */
+@media only screen and (min-width: 75em) {
+  }
+
+
+
+/* Items
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.divider {
+  opacity: 0.1;
+  border-bottom: 1px solid #17181A; }
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #17181A;
+  border-radius: 8px;
+  margin: 0 8px 0 0;
+}
+
+.spacer {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.secondary {
+  color: $secondary;
+ }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0; }
+
+li {
+  margin-bottom: 1rem; }
+
+@include sm {
+  li {
+    margin-bottom: 1.25rem; }
+  }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  text-decoration: none;
+  &:visited,
+  &:link {
+  color: #17181A; }
+}
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+img {
+  max-width: 100%; }
+
+.image img {
+  display: block;
+  object-fit: fill;
+  height: auto;
+  width: 100%; }

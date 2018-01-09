@@ -1,103 +1,46 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-{% include nav.html %}
 <body>
+  {% include header.html %}
+  <section class="project">
 
-  <!-- Project conver (full width) -->
-  <figure class="project-cover">
-    <img class="cover-image" src="../assets/images/phone-syb.png">
-  </figure>
+  <!-- Project cover -->
+    <section class="project-cover">
+        <img src="../assets/images/phone-syb.png">
+    </section>
 
-  <!-- Project content (grid) -->
-  <div class="container-fluid">
+  <!-- Project content -->
+    <section class="project-content container-fluid">
 
-      <div class="row">
-        <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-8 col-lg-offset-4 col-lg-8">
+      <section class="sub-section">
+        {% include project-text.html %}
+      </section>
 
-          <div class="project-name">
-            <h1>
-                Soundtrack
-            </h1>
+      <section class="sub-section">
+        <div class="row">
+          <div class="col-xs-12">
+            <figure>
+              <img class="project-image" src="../assets/images/School.jpg">
+            </figure>
+
+            <figure>
+              <img class="project-image" src="../assets/images/School_mini.jpg">
+            </figure>
+
+            <figure>
+              <img class="project-image" src="../assets/images/Browse.jpg">
+            </figure>
           </div>
-
         </div>
-      </div>
+      </section>
 
-
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-
-          <div class="project-meta">
-            <ul>
-              <li>
-                <p>2015 - 2017</p>
-              </li>
-              <li>
-                <p class="secondary">Senior Product Designer</p>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-
-          <div class="project-text">
-            <p>The International Center of Photography (ICP) is the world’s leading institution dedicated to photography and visual culture.
-               It is based in New York and consists of a museum and a photography school.
-               To date, ICP has presented more than 700 exhibitions and offered thousands of classes at every level.
-
-               In 2014 I was in involved in the digital redesign of ICP. The ambition was to bring ICP to new audiences and create a
-                vibrant platform for them to share their work, cultural assets, and different points of view.
-                The platform was designed to be a forum for engagement bringing all parts of ICP —
-                the Museum, School, Collections, Store, and Library together.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="spacer">
-      </div>
-
-
-      <div class="row">
-        <figure>
-          <img class="project-image" src="../assets/images/School.jpg">
-        </figure>
-      </div>
-
-      <div class="row">
-        <figure>
-          <img class="project-image" src="../assets/images/School_mini.jpg">
-        </figure>
-      </div>
-
-      <div class="row">
-        <figure>
-          <img class="project-image" src="../assets/images/Browse.jpg">
-        </figure>
-      </div>
-
-  </div>
+    </section>
 
   <!-- End Project content -->
 
-  <div class="project-footer">
-    <div class="container-fluid">
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-8 col-lg-offset-4 col-lg-8">
-            <p class="secondary">Next</p>
-            <h2>A Journey Through Middle-Earth</h2>
-          </div>
-        </div>
-      </div>
-  </div>
-
-{% include footer.html %}
-
+    {% include next-project.html %}
+  </section>
+  {% include footer.html %}
+</body>
 </html>

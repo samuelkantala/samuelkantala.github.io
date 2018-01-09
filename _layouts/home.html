@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-{% include nav.html %}
 <body>
-  <div class="container-fluid">
+  {% include header.html %}
+  <section class="home container-fluid">
 
 
     <!-- Intro -->
 
-
+    <section class="intro">
       <div class="row">
-        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 
-          <div class="cover">
             <h1>
-                Hi I’m Samuel, a Swedish designer based in Montreal. </br> — I’m currently working on the product team at <a href="">Breather</a>,
-                designing a network of spaces that are connected, productive and accessible.
+                I'm a Swedish designer based in Montreal. Currently working on the product team at <a class="hover-1" href="">Breather</a>.
             </h1>
           </div>
 
         </div>
-      </div>
+    </section>
 
       <!-- Projects -->
-
+    <section class="project-feed">
       <div class="row">
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 
       <div class="project-preview">
-        <figure class="project-thumb">
-          <img class="image" src="../assets/images/soundtrack-thumb.png">
-        </figure>
+        <img class="image" src="../assets/images/soundtrack-thumb.png">
         <p>International Center of Photography</p>
-        <p class="secondary">2014</p>
+        <p>2014</p>
       </div>
     </div>
     </div>
+  </section>
 
-  </div>
-{% include footer.html %}
+  </section>
+  {% include footer.html %}
+</body>
 </html>
