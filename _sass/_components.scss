@@ -80,7 +80,7 @@ footer {
   color: $primary;
  @include transition-1;
   &:hover {
-    border-bottom: 1px solid $accent;
+    border-bottom: 1px solid $primary;
     color: $primary;
   }
 }
@@ -92,22 +92,19 @@ footer {
   margin: 0 0 2rem 0;
   p {
     &:last-child {
-      color: $secondary;
-    }
+      color: $secondary; }
+  }
+  img {
+    display: block;
+    object-fit: fill;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    @include md {
+      margin-bottom: 1rem; }
   }
 }
 
-.project-thumb {
-  background-color: #DFE1E5;
-  margin-bottom: 1rem;
-}
-
-.project-thumb img {
-  display: block;
-  object-fit: fill;
-  height: auto;
-  width: 100%;
-}
 
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
