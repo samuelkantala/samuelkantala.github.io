@@ -22,10 +22,12 @@ nav {
     text-decoration: none;
     color: #17181A;
   }
+  @include md {
+    height: 7rem;
+  }
 }
 
 .brand {
-  letter-spacing: -.025em;
 }
 
 
