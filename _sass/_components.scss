@@ -108,13 +108,54 @@ footer {
   }
 }
 
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.title {
+  margin-bottom: 2rem;
+  @include title;
+}
+
+.divider {
+  height: 1rem;
+  border-top: 1px solid $tertirary;
+}
+
+.spacer {
+  margin-bottom: 3rem;
+}
 
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.project {
 
+.about-header {
+
+  .meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: $secondary;
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    li {
+      margin: 0;
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .content {
+    max-width: 50rem;
+  }
 }
+
+/* Project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .project-cover {
   height: 24rem;
@@ -127,21 +168,12 @@ footer {
     object-fit: cover; }
 }
 
+.project {}
+
 .project-header {
   max-width: 54rem;
 }
 
-.project-name {
-  margin-bottom: 2rem;
-  h1 {
-    font-size: 3rem;
-  }
-  @include sm {
-    h1 {
-      font-size: 5rem;
-    }
-  }
-}
 
 .project-meta {
   display: flex;

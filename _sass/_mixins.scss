@@ -25,3 +25,12 @@ $transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-
   -o-transition: $transition-1;
   transition: $transition-1;
 }
+
+
+@mixin title {
+    color: red;
+    font-size: 3rem;
+    @include sm {
+      font-size: 5rem;
+      }
+}

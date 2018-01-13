@@ -50,6 +50,7 @@ p {
   font-size: 1rem;
   line-height: 1.5em;
   margin-bottom: 1.5rem;
+  max-width: 50rem;
 }
 
 @include sm {
@@ -99,45 +100,17 @@ p {
 
 
 
-/* Items
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.divider {
-  opacity: 0.1;
-  border-bottom: 1px solid #17181A; }
-
-.dot {
-  height: 8px;
-  width: 8px;
-  background-color: #17181A;
-  border-radius: 8px;
-  margin: 0 8px 0 0;
-}
-
-.spacer {
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.secondary {
-  color: $secondary;
- }
-
-
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {
   list-style: none;
   padding-left: 0;
-  margin-top: 0; }
+  margin: 0; }
 
 li {
-  margin-bottom: 1rem; }
+  margin: 0; }
 
-@include sm {
-  li {
-    margin-bottom: 1.25rem; }
-  }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
