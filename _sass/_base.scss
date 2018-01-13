@@ -5,7 +5,7 @@ body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
   font-weight: normal;
-  font-family: "Atlas Grotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Graphik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
   color: $primary; }
@@ -31,7 +31,7 @@ h1,
 h2,
 h3 {
   line-height: 1.125em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: -.025em;
 }
 
@@ -49,6 +49,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 @include sm {
@@ -75,6 +76,8 @@ p {
 
   p {
     font-size: 1.25rem;
+    line-height: 1.6em;
+    margin-bottom: 2rem;
   }
 
 }

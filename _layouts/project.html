@@ -3,19 +3,17 @@
 {% include head.html %}
 <body>
   {% include header.html %}
-  <section class="project">
+  <article class="project container-fluid">
 
-  <!-- Project cover -->
+  <!-- Project cover
     <section class="project-cover">
         <img src="../assets/images/phone-syb.png">
     </section>
-
+    -->
   <!-- Project content -->
-    <section class="project-content container-fluid">
 
-      <section class="sub-section">
-        {% include project-text.html %}
-      </section>
+
+        {% include project-header.html %}
 
       <section class="sub-section">
         <div class="row">
@@ -27,12 +25,11 @@
         </div>
       </section>
 
-    </section>
 
   <!-- End Project content -->
 
     {% include next-project.html %}
-  </section>
+  </article>
   {% include footer.html %}
 </body>
 </html>

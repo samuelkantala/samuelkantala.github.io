@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Soundtrack
+title: International Center of Photography
 years: 2015 - 2017
 role: Product Designer
 permalink: /soundtrack

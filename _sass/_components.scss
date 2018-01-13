@@ -14,6 +14,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
+  margin-bottom: calc(2rem + 20vh);
   a {
     text-decoration: none;
   }
@@ -126,23 +127,46 @@ footer {
     object-fit: cover; }
 }
 
-.project-content {
+.project-header {
+  max-width: 54rem;
 }
 
 .project-name {
-  padding: 2rem 0;
+  margin-bottom: 2rem;
+  h1 {
+    font-size: 3rem;
+  }
   @include sm {
-    padding: 3rem 0; }
+    h1 {
+      font-size: 5rem;
+    }
+  }
 }
 
 .project-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
   li {
-    margin: 0; }
+    margin: 0 1rem 0 0
+  }
+  @include sm {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 1rem 0 0;
+    }
+  }
 }
 
 .project-paragraphs {
-  p {
-    margin-bottom: 2rem; }
+  max-width: 50rem;
 }
 
 
