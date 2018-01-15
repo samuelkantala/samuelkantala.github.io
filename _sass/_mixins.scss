@@ -34,3 +34,12 @@ $transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-
       font-size: 5rem;
       }
 }
+
+@mixin padding-spacer {
+  padding: 2rem 0 4rem 0;
+  border-bottom: 1px solid $tertirary;
+  @include md {
+  padding: 3rem 0 6rem 0;
+  border-bottom: 1px solid $tertirary;
+ }
+}

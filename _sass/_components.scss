@@ -9,7 +9,7 @@ nav {
 
 }
 
-.header {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,15 +125,18 @@ footer {
   margin-bottom: 3rem;
 }
 
+.secondary {
+  color: $secondary;
+}
+
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 .about-header {
+  @include padding-spacer;
 
   .meta {
-    display: flex;
-    align-items: center;
     margin-bottom: 2rem;
     color: $secondary;
     ul {
@@ -143,14 +146,31 @@ footer {
     }
     li {
       margin: 0;
-      p {
-        margin: 0;
-      }
     }
   }
 
   .content {
     max-width: 50rem;
+  }
+}
+
+.sub-section {
+  @include padding-spacer;
+}
+
+.experience,
+.education {
+  ul{
+    margin-bottom: 1rem;
+  }
+  li:last-child {
+    color: $secondary;
+  }
+}
+
+.awards {
+  li {
+    margin-bottom: 1rem;
   }
 }
 
