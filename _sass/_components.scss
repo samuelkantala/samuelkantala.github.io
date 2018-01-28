@@ -11,10 +11,13 @@ nav {
 
 .site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 5rem;
-  margin-bottom: calc(2rem + 20vh);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5em;
+
   a {
     text-decoration: none;
   }
@@ -24,13 +27,23 @@ nav {
     color: #17181A;
   }
   @include md {
+    margin-bottom: 2rem;
     height: 7rem;
+    font-size: 1.25rem;
+    line-height: 1.5em;
   }
 }
 
 .brand {
 }
 
+#close {
+  fill: $secondary;
+  @include transition(fill 200ms ease-out){}
+  &:hover {
+    fill: $primary;
+  }
+}
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -69,12 +82,14 @@ footer {
 .intro {
   margin: 4rem 0 8rem 0;
   h1 {
-    font-size: calc(1.5rem + .05*(100vw - 20rem));
-    line-height: 1.25em; }
+    font-size: calc(1rem + .05*(100vw - 20rem));
+    line-height: 1.25em;
+    margin-bottom: 1em;
+   }
   @include sm {
     h1 {
       line-height: 1.125em;
-      font-size: calc(3rem + .02*(100vw - 48rem)); }
+      font-size: calc(2rem + .02*(100vw - 48rem)); }
   }
 }
 
@@ -112,7 +127,7 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   @include title;
 }
 
@@ -129,15 +144,75 @@ footer {
   color: $secondary;
 }
 
+
+/* Collection
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.collection {
+
+}
+
+.collection-label {
+  @include stroke;
+  p {
+    color: $secondary;
+    margin: 0 0 2rem 0; }
+}
+
+.collection-item {
+  @include stroke;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include md {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
+
+  p {
+    color: $secondary;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 1rem;
+    line-height: 1.5em;
+    letter-spacing: normal;
+    color: $primary;
+    margin: 0 0 .5rem 0;
+    @include sm {
+      margin: 0; }
+    @include md {
+      font-size: 1.25rem;
+      line-height: 1.6em; }
+  }
+
+  .item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.about {
+  .row {
+    margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 3rem; }
+  }
+}
 
 .about-header {
-  @include padding-spacer;
+  @include stroke;
+  padding-bottom: 4rem;
+  @include md {
+    padding-bottom: 6rem; }
 
   .meta {
     margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 3rem; }
     color: $secondary;
     ul {
       display: flex;
@@ -155,22 +230,41 @@ footer {
 }
 
 .sub-section {
-  @include padding-spacer;
+  padding: 2rem 0 2rem 0;
+  @include md {
+    padding: 6rem 0 6rem 0; }
 }
+
 
 .experience,
 .education {
-  ul{
-    margin-bottom: 1rem;
-  }
-  li:last-child {
+  @include stroke;
+}
+
+.experience,
+.education,
+.awards {
+
+  .label {
     color: $secondary;
+    margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 1rem; }
+  }
+
+  p {
+  color: $secondary;
+  margin-bottom: 0.5rem;
+  @include md {
+    margin-bottom: 1rem; }
   }
 }
 
 .awards {
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    @include md {
+      margin-bottom: 1rem; }
   }
 }
 
