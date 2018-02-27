@@ -81,47 +81,30 @@ footer {
 
 .intro {
   margin: 4rem 0 8rem 0;
-  h1 {
-    font-size: calc(1rem + .05*(100vw - 20rem));
-    line-height: 1.25em;
-    margin-bottom: 1em;
-   }
-  @include sm {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto 0 0;
+  }
+
+  .internal {
     h1 {
-      line-height: 1.125em;
-      font-size: calc(2rem + .02*(100vw - 48rem)); }
+      margin-right: .5rem;
+      @include md {
+        margin-right: .75rem;
+      }
+    }
+  }
+
+  .external {
+    color: $secondary;
   }
 }
 
-.intro a {
-  border-bottom: 1px solid #e1e1e1;
-  color: $primary;
- @include transition-1;
-  &:hover {
-    border-bottom: 1px solid $primary;
-    color: $primary;
-  }
-}
 
-/* Feed
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.project-preview {
-  margin: 0 0 2rem 0;
-  p {
-    &:last-child {
-      color: $secondary; }
-  }
-  img {
-    display: block;
-    object-fit: fill;
-    height: auto;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    @include md {
-      margin-bottom: 1rem; }
-  }
-}
 
 /* Global
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -167,23 +150,30 @@ footer {
     padding-top: 3rem;
     padding-bottom: 3rem; }
 
-  p {
-    color: $secondary;
+  h2, p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
     margin: 0;
+    @include sm {
+      font-size: 1rem;
+      line-height: 1.5em; }
+    @include lg {
+      font-size: 1.25rem;
+      line-height: 1.6em;
+      margin: 0; }
   }
 
-  .name {
-    font-size: 1rem;
-    line-height: 1.5em;
-    letter-spacing: normal;
-    color: $primary;
+  h2 {
     margin: 0 0 .5rem 0;
-    @include sm {
-      margin: 0; }
     @include md {
-      font-size: 1.25rem;
-      line-height: 1.6em; }
+      margin: 0; }
   }
+
+  p {
+    color: $secondary;
+  }
+
 
   .item-container {
     display: flex;

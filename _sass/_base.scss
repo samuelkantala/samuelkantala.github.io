@@ -2,8 +2,8 @@ html {
   font-size: 100%; }
 
 body {
-  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.5;
+  font-size: .9375em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5rem;
   font-weight: normal;
   font-family: "Atlas Grotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,7 +17,6 @@ body {
 
 h1,
 h2,
-h3,
 p {
   margin: 0;
   -moz-font-feature-settings:"kern" 1;
@@ -28,44 +27,37 @@ p {
   font-kerning: normal; }
 
 h1,
-h2,
-h3 {
-  line-height: 1.125em;
+h2, {
   font-weight: normal;
   letter-spacing: -.025em;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h2 {
   font-size: 1.25rem;
-}
-
-h3 {
+  line-height: 1.2em;
 }
 
 p,
-text
- {
-  font-size: 1rem;
-  line-height: 1.5em;
+text {
+  font-size: .9375rem;
+  line-height: 1.5rem;
 }
 
-p, {
+p {
   margin-bottom: 1.5rem;
   max-width: 50rem;
 }
 
 @include sm {
 
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
+  p {
+    font-size: 1rem;
+    line-height: 1.5em;
   }
 
 }
@@ -73,25 +65,21 @@ p, {
 @include md {
 
   h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  p,
-  text {
-    font-size: 1.25rem;
-    line-height: 1.6em;
-  }
-
-  p, {
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 1.25em;
   }
 
 }
 
+@include lg {
+
+  P {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  margin-bottom: 2rem;
+  }
+
+}
 /* Breakpoints
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
