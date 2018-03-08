@@ -1,65 +1,15 @@
 @font-face {
-    font-family: 'Atlas Grotesk';
-    src: url('../assets/fonts/AtlasGrotesk-Light.woff2') format('woff2'),
-        url('../assets/fonts/AtlasGrotesk-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Atlas Grotesk';
-    src: url('../assets/fonts/AtlasGrotesk-Regular.woff2') format('woff2'),
-        url('../assets/fonts/AtlasGrotesk-Regular.woff') format('woff');
+    font-family: 'Display';
+    src: url('../assets/fonts/Display-Light.woff2') format('woff2'),
+        url('../assets/fonts/Display-Light.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Atlas Grotesk';
-    src: url('../assets/fonts/AtlasGrotesk-Medium.woff2') format('woff2'),
-        url('../assets/fonts/AtlasGrotesk-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Atlas Grotesk';
-    src: url('../assets/fonts/AtlasGrotesk-Bold.woff2') format('woff2'),
-        url('../assets/fonts/AtlasGrotesk-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'Graphik';
-    src: url('../assets/fonts/Graphik-Light.woff2') format('woff2'),
-        url('../assets/fonts/Graphik-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Graphik';
-    src: url('../assets/fonts/Graphik-Regular.woff2') format('woff2'),
-        url('../assets/fonts/Graphik-Regular.woff') format('woff');
+    font-family: 'Text';
+    src: url('../assets/fonts/Text-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Text-Regular.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Graphik';
-    src: url('../assets/fonts/Graphik-Medium.woff2') format('woff2'),
-        url('../assets/fonts/Graphik-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Graphik';
-    src: url('../assets/fonts/Graphik-Bold.woff2') format('woff2'),
-        url('../assets/fonts/Graphik-Bold.woff') format('woff');
-    font-weight: bold;
     font-style: normal;
 }

@@ -17,30 +17,28 @@
   }
 }
 
-$transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-bottom-width 200ms ease-out;
-
-@mixin transition-1() {
-  -webkit-transition: $transition-1;
-  -moz-transition: $transition-1;
-  -o-transition: $transition-1;
-  transition: $transition-1;
-}
-
-@mixin transition($transition) {
-  -webkit-transition: $transition;
-  -moz-transition: $transition;
-  -o-transition: $transition;
-  transition: $transition;
-}
-
-
-@mixin title {
-    font-size: 3rem;
+@mixin content-end {
+    margin-bottom: 4rem;
     @include sm {
-      font-size: 5rem;
-      }
+      margin-bottom: 6rem; }
+    @include md {
+      margin-bottom: 8rem; }
+    @include lg {
+      margin-bottom: 10rem; }
 }
 
-@mixin stroke {
-  border-bottom: 1px solid $tertirary;
+@mixin underline-0 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: border-bottom-color 200ms ease-out;
+  -moz-transition: border-bottom-color 200ms ease-out;
+  -o-transition: border-bottom-color 200ms ease-out;
+  transition: border-bottom-color 200ms ease-out;
+}
+
+@mixin underline-1 {
+  border-bottom: 1px solid $accent;
+  -webkit-transition: border-bottom-color 200ms ease-out;
+  -moz-transition: border-bottom-color 200ms ease-out;
+  -o-transition: border-bottom-color 200ms ease-out;
+  transition: border-bottom-color 200ms ease-out;
 }

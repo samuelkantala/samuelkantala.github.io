@@ -2,32 +2,24 @@
 <html>
 {% include head.html %}
 <body>
+  {% include header-home.html %}
   <section class="home container-fluid">
 
     <!-- Intro -->
 
     <section class="intro">
-      <h1>
-        Samuel Kantala Delgado
-      </h1>
-      <h1>
-        Product Designer
-      </h1>
-      <a class="internal" href="/about">
-        <h1>
-          About
-        </h1>
-        <img src="../assets/svg/arrow2.svg">
-      </a>
-      <a class="link external">
-        <h1>
-        hello@samsam.design
-        </h1>
-      </a>
+      <ul>
+        <li>
+          <h1><a href="/about">About</a></h1>
+        </li>
+        <li>
+          <h1><a href="/about" class="silent">Hello@samsam.design</a></h1>
+        </li>
+      </ul>
     </section>
 
       <!-- Projects -->
-      {% include collection2.html %}
+      {% include collection.html %}
 
   </section>
 </body>
