@@ -6,6 +6,7 @@
   max-width: $container-width-max;
   padding-right: 1rem;
   padding-left: 1rem;
+
   @include sm {
     width: $container-width-sm;
   }
@@ -19,6 +20,30 @@
 
 .home, .about, .project {
   @include content-end;
+
+  @include sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @include lg {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+.row {
+  @include flex-box;
+  box-sizing: border-box;
+  -ms-flex: 0 1 auto;
+  -webkit-box-flex: 0;
+  flex: 0 1 auto;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 
@@ -57,7 +82,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 header {
-  display: flex;
+  @include flex-box;
 }
 
 nav {
@@ -69,30 +94,18 @@ nav {
   align-items: center;
   height: 5rem;
   margin-bottom: 2rem;
-
-  li {
-    color: $primary;
-    font-size: .9375rem;
-    line-height: 1.5rem;
-    &:last-child {
-      color: $secondary;
-    }
-  }
+  font-size: .9375rem;
+  line-height: 1.5rem;
 
   @include sm {
-    li {
-      font-size: 1rem;
-    }
+    font-size: 1rem;
   }
 
   @include lg {
     height: 7rem;
-    li {
-      font-size: 1.25rem;
-      line-height: 2rem;
-    }
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
-
 }
 
 .header-close {
@@ -156,27 +169,11 @@ nav {
 
 .collection {
 
-  p {
-    color: $secondary;
-    margin-bottom: 1rem; }
-
   ul {
   }
 
   li {
-    padding: .5rem 0;
-    margin: 0;
-
-    @include sm {
-      padding: .75rem 0;
-    }
-
-    @include md {
-      padding: 1rem 0;
-    }
-
-    @include lg {
-      padding: 1.25rem 0; }
+    @include vertical-rythm;
   }
 
 }
@@ -188,14 +185,10 @@ nav {
   }
 
   li {
-    margin: .5rem 0;
+    @include vertical-rythm;
     &:last-child {
       color: $secondary;
     }
-
-    @include lg {
-      padding-top: .25rem;
-      padding-bottom: .25rem; }
   }
 }
 
@@ -211,22 +204,27 @@ nav {
 
 }
 
-.experience {
+.experience, .awards {
 
-  li {
-    &:last-child {
+  .row {
+    justify-content: space-between;
+  }
+
+  .years {
     color: $secondary;
+
+    @include md {
+      width: 50%;
     }
   }
 
 }
 
 .awards {
+
   li {
     margin-bottom: 0.5rem;
-    &:first-child {
-      color: $secondary;
-    }
+
     @include lg {
       margin-bottom: 1rem; }
   }
@@ -238,9 +236,7 @@ nav {
 .project {
 
   h1 {
-    margin-bottom: 2rem;
-
-    @include lg {
-      margin-bottom: 3rem; }
+    padding-bottom: 1rem;
+    @include vertical-rythm;
   }
 }

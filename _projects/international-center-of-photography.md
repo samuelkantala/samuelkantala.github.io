@@ -1,9 +1,10 @@
 ---
-layout: project-icp
+layout: project
 title: International Center of Photography
-years: 2015 - 2017
-role: Product Designer
+years: 2014
+role: Designer
 permalink: /international-center-of-photography
+order: 4
 ---
 The International Center of Photography (ICP) is the world’s leading institution dedicated to photography and visual culture. It is based in New York and consists of a museum and a photography school. To date, ICP has presented more than 700 exhibitions and offered thousands of classes at every level.
 

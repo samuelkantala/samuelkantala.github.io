@@ -2,54 +2,73 @@
 <html>
 {% include head.html %}
 <body>
-  {% include header-close.html %}
+  {% include header-page.html %}
   <article class="about container-fluid">
   <section class="sub-section about-header">
+    <h1 class="label">About</h1>
     <div class="content">
     {{ content }}
     </div>
   </section>
   <section class="sub-section experience">
-        <p class="label">Experience</p>
-        <ul>
-          <li>Breather</li>
-          <li>Senior Product Designer, 2017 - 2018</li>
-        </ul>
-        <ul>
-          <li>Soundtrack Your Brand</li>
-          <li>Product Designer, 2015 - 2017</li>
-        </ul>
-        <ul>
-          <li>North Kingdom</li>
-          <li>Designer, 2014 - 2015</li>
-        </ul>
-        <ul>
-          <li>Your Majesty</li>
-          <li>Designer, 2013 - 2014</li>
-        </ul>
+        <h2 class="label">Experience</h2>
+        <div class="row">
+          <ul>
+            <li>Breather</li>
+            <li>Senior Product Designer</li>
+          </ul>
+          <span class="years">2017 - 2018</span>
+        </div>
+        <div class="row">
+          <ul>
+            <li>Soundtrack Your Brand</li>
+            <li>Product Designer</li>
+          </ul>
+          <span class="years">2015 - 2017</span>
+        </div>
+        <div class="row">
+          <ul>
+            <li>North Kingdom</li>
+            <li>Designer</li>
+          </ul>
+          <span class="years">2014 - 2015</span>
+        </div>
+        <div class="row">
+          <ul>
+            <li>Your Majesty</li>
+            <li>Designer</li>
+          </ul>
+          <span class="years">2013 - 2014</span>
+        </div>
   </section>
   <section class="sub-section awards">
-    <p class="label">Awards</p>
-    <ul>
-      <li>2016</li>
-      <li>Sweden's National Design Award</li>
-    </ul>
-    <ul>
-      <li>2015</li>
-      <li>Awwwards Site of The Year</li>
-      <li>One Show UX/UI Gold</li>
-      <li>FWA Cutting Edge Project</li>
-      <li>FWA Site of The Day</li>
-      <li>Pixel Awards Peoples Champ</li>
-      <li>Andy Awards Silver</li>
-    </ul>
-    <ul>
-      <li>2014</li>
-      <li>FWA Site of The Day</li>
-      <li>FWA Mobile Site of The Day</li>
-      <li>W3 Awards Gold</li>
-      <li>Davey Awards Gold</li>
-    </ul>
+    <h2 class="label">Awards</h2>
+    <div class="row">
+      <ul>
+        <li>Sweden's National Design Award / Design S</li>
+      </ul>
+      <span class="years">2016</span>
+      </div>
+    <div class="row">
+      <ul>
+        <li>Awwwards Site of The Year</li>
+        <li>One Show UX/UI Gold</li>
+        <li>FWA Cutting Edge Project</li>
+        <li>FWA Site of The Day</li>
+        <li>Pixel Awards Peoples Champ</li>
+        <li>Andy Awards Silver</li>
+      </ul>
+      <span class="years">2015</span>
+    </div>
+    <div class="row">
+      <ul>
+        <li>FWA Site of The Day</li>
+        <li>FWA Mobile Site of The Day</li>
+        <li>W3 Awards Gold</li>
+        <li>Davey Awards Gold</li>
+      </ul>
+      <span class="years">2014</span>
+    </div>
   </section>
 
   </article>

@@ -13,3 +13,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'sansText';
+    src: url('../assets/fonts/sansText-Light.woff2') format('woff2'),
+        url('../assets/fonts/sansText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

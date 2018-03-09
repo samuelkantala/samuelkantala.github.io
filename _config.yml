@@ -23,6 +23,11 @@ url: "samuelkantala.github.io/" # the base hostname & protocol for your site, e.
 repository: samuelkantala/samuelkantala.github.io
 github: [metadata]
 
+collections:
+  projects:
+    output: true
+    permalink: /
+
 # Build settings
 markdown: kramdown
 gems:

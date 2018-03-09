@@ -1,26 +1,10 @@
 <section class="collection">
-  <p>Selected work</p>
   <ul>
+    {% assign projects = (site.projects | sort: 'order') %}
+    {% for project in projects %}
     <li>
-      <h1><a href="/about">Breather</a></h1>
+      <h1><a href="{{project.permalink}}">{{project.title}}</a></h1>
     </li>
-    <li>
-      <h1><a href="/about">Spotify Business</a></h1>
-    </li>
-    <li>
-      <h1><a href="/about">Soundtrack</a></h1>
-    </li>
-    <li>
-      <h1><a href="/international-center-of-photography">International Center of Photography</a></h1>
-    </li>
-    <li>
-      <h1><a href="/about">A Journery Through Middle-Earth</a></h1>
-    </li>
-    <li>
-      <h1><a href="/about">H&M Studio</a></h1>
-    </li>
-    <li>
-      <h1><a href="/about">The New York Times Conferences</a></h1>
-    </li>
+    {% endfor %}
   </ul>
 </section>

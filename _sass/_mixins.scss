@@ -17,6 +17,25 @@
   }
 }
 
+@mixin flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+@mixin vertical-rythm {
+  margin: 0 0 1rem 0;
+
+  @include sm {
+    margin: 0 0 1.5rem 0; }
+  @include md {
+    margin: 0 0 2rem 0; }
+  @include lg {
+    margin: 0 0 2.5rem 0; }
+}
+
 @mixin content-end {
     margin-bottom: 4rem;
     @include sm {
