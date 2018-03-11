@@ -26,14 +26,14 @@
 
 
 @mixin vertical-rythm {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.5rem 0;
 
   @include sm {
-    margin: 0 0 1.5rem 0; }
-  @include md {
     margin: 0 0 2rem 0; }
-  @include lg {
+  @include md {
     margin: 0 0 2.5rem 0; }
+  @include lg {
+    margin: 0 0 3rem 0; }
 }
 
 @mixin content-end {
@@ -47,7 +47,7 @@
 }
 
 @mixin underline-0 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid $primary-0;
   -webkit-transition: border-bottom-color 200ms ease-out;
   -moz-transition: border-bottom-color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out;
@@ -55,7 +55,7 @@
 }
 
 @mixin underline-1 {
-  border-bottom: 1px solid $accent;
+  border-bottom: 1px solid $primary;
   -webkit-transition: border-bottom-color 200ms ease-out;
   -moz-transition: border-bottom-color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out;

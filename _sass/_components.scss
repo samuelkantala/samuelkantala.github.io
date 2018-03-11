@@ -93,7 +93,6 @@ nav {
   justify-content: flex-start;
   align-items: center;
   height: 5rem;
-  margin-bottom: 2rem;
   font-size: .9375rem;
   line-height: 1.5rem;
 
@@ -108,16 +107,6 @@ nav {
   }
 }
 
-.header-close {
-  justify-content: flex-end;
-  align-items: center;
-  height: 5rem;
-
-  @include lg {
-    height: 7rem;
-  }
-
-}
 
 #close {
   fill: $primary;
@@ -173,7 +162,6 @@ nav {
   }
 
   li {
-    @include vertical-rythm;
   }
 
 }
@@ -185,7 +173,6 @@ nav {
   }
 
   li {
-    @include vertical-rythm;
     &:last-child {
       color: $secondary;
     }
@@ -205,38 +192,12 @@ nav {
 }
 
 .experience, .awards {
-
-  .row {
-    justify-content: space-between;
-  }
-
-  .years {
-    color: $secondary;
-
-    @include md {
-      width: 50%;
-    }
-  }
-
 }
 
-.awards {
-
-  li {
-    margin-bottom: 0.5rem;
-
-    @include lg {
-      margin-bottom: 1rem; }
-  }
-}
 
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .project {
 
-  h1 {
-    padding-bottom: 1rem;
-    @include vertical-rythm;
-  }
 }
