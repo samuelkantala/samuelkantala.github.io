@@ -2,56 +2,76 @@
 <html>
 {% include head.html %}
 <body>
-  {% include header-page.html %}
   <article class="about container-fluid">
-  <section class="sub-section about-header">
-    <div class="content">
-    {{ content }}
-    </div>
-  </section>
-  <section class="sub-section experience">
-        <p class="label">Experience</p>
-        <ul>
-          <li>Breather</li>
-          <li>Senior Product Designer, 2017 - 2018</li>
-        </ul>
-        <ul>
-          <li>Soundtrack Your Brand</li>
-          <li>Product Designer, 2015 - 2017</li>
-        </ul>
-        <ul>
-          <li>North Kingdom</li>
-          <li>Designer, 2014 - 2015</li>
-        </ul>
-        <ul>
-          <li>Your Majesty</li>
-          <li>Designer, 2013 - 2014</li>
-        </ul>
-  </section>
-  <section class="sub-section awards">
-    <p class="label">Awards</p>
-    <ul>
-      <li>2016</li>
-      <li>Sweden's National Design Award / Design S</li>
-    </ul>
-    <ul>
-      <li>2015</li>
-      <li>Awwwards Site of The Year</li>
-      <li>One Show UX/UI Gold</li>
-      <li>FWA Cutting Edge Project</li>
-      <li>FWA Site of The Day</li>
-      <li>Pixel Awards Peoples Champ</li>
-      <li>Andy Awards Silver</li>
-    </ul>
-    <ul>
-      <li>2014</li>
-      <li>FWA Site of The Day</li>
-      <li>FWA Mobile Site of The Day</li>
-      <li>W3 Awards Gold</li>
-      <li>Davey Awards Gold</li>
-    </ul>
-  </section>
-
+    {% include header-page.html %}
+    <section class="sub-section about-header">
+      <h1>
+        {{ page.title }}
+      </h1>
+      {{ content }}
+    </section>
+    <section class="sub-section experience">
+          <h2 class="label">Experience</h2>
+          <ul>
+            <li>Breather</li>
+            <li>Senior Product Designer, 2017 - 2018</li>
+          </ul>
+          <ul>
+            <li>Soundtrack Your Brand</li>
+            <li>Product Designer, 2015 - 2017</li>
+          </ul>
+          <ul>
+            <li>North Kingdom</li>
+            <li>Designer, 2014 - 2015</li>
+          </ul>
+          <ul>
+            <li>Your Majesty</li>
+            <li>Designer, 2013 - 2014</li>
+          </ul>
+    </section>
+    <section class="sub-section awards">
+      <h2 class="label">Awards</h2>
+      <ul>
+        <li>2016</li>
+        <li>Sweden's National Design Award / Design S</li>
+      </ul>
+      <ul>
+        <li>2015</li>
+        <li>Awwwards Site of The Year</li>
+        <li>One Show UX/UI Gold</li>
+        <li>FWA Cutting Edge Project</li>
+        <li>FWA Site of The Day</li>
+        <li>Pixel Awards Peoples Champ</li>
+        <li>Andy Awards Silver</li>
+      </ul>
+      <ul>
+        <li>2014</li>
+        <li>FWA Site of The Day</li>
+        <li>FWA Mobile Site of The Day</li>
+        <li>Awwwards Site of The Day</li>
+        <li>W3 Awards Gold</li>
+        <li>Davey Awards Gold</li>
+      </ul>
+    </section>
+    <section class="sub-section credits">
+      <h2 class="label">Credits</h2>
+      <ul>
+        <li>Breather</li>
+        <li>Arnaud Spuhler, Mehgan Iulo, Simon Petry, Joel Simpson, Séraphin Hochart, Benjamin Belbis, Mehdi-Loup Nasom, Laurent Laporte, Marie-Eve Gauthier, Alessia Bellisario, Alain Lormil, Jean-François Duval, Sebastien Menard, Ben Nevile</li>
+      </ul>
+      <ul>
+        <li>Soundtrack Your Brand</li>
+        <li>Joel Brosjö, Patrik Axelsson, Gustav Arnetz, Henrik Engdahl, Martin Tägtström, Niklas Alvarsson, Caitlin Sullivan</li>
+      </ul>
+      <ul>
+        <li>North Kingdom</li>
+        <li>Jonas Eriksson, Riccardo Tagliabue, Antoine Lehurt, Maki Aketa, Tomoya Taniai, Sheila Ho, Anna Jodlovsky, Anniken Gjelseth, Alfredo Aponte</li>
+      </ul>
+      <ul>
+        <li>Your Majesty</li>
+        <li>Jens Karlsson, James Widegren, Nina Amjadi, Dana Mulranen, Rachel Kalagher, Florence Libbrecht, Joshua Pipic, Marius Feldman, Theo Stråhlén, Tore Holmberg, Alexander Strand Kristensen</li>
+      </ul>
+    </section>
   </article>
 </body>
 </html>

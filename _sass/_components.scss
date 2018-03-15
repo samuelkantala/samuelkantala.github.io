@@ -20,6 +20,8 @@
 
 .home, .about, .project {
   @include content-end;
+  font-size: .9375rem;
+  line-height: 1.5rem;
 
   @include sm {
     font-size: 1rem;
@@ -48,33 +50,19 @@
 
 
 .sub-section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 
-  .content {
+  .text-content {
     max-width: 36rem;
 
-    p {
-      margin-bottom: 1.5rem; }
   }
 
-  ul,
-  p {
-    margin-bottom: 2rem; }
-
-
   @include lg {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
 
-    .content {
+    .text-content {
       max-width: 50rem;
-
-      p {
-        margin-bottom: 2rem; }
     }
-
-    ul,
-    p {
-      margin-bottom: 3rem; }
    }
 }
 
@@ -89,12 +77,13 @@ nav {
 
 }
 
-.header-home {
+.header {
   justify-content: flex-start;
   align-items: center;
   height: 5rem;
   font-size: .9375rem;
   line-height: 1.5rem;
+  letter-spacing: -.025em;
 
   @include sm {
     font-size: 1rem;
@@ -105,6 +94,14 @@ nav {
     font-size: 1.25rem;
     line-height: 2rem;
   }
+}
+
+.header-home {
+
+}
+
+.header-page {
+  @include vertical-rythm-1;
 }
 
 
@@ -131,13 +128,21 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .home {
 
+  ul {
+
+  }
+
+  li {
+    @include vertical-rythm-1;
+  }
+
   h1 {
     display: inline;
 
     a {
     display: inline;
     padding-bottom: .125rem;
-    @include underline-0;
+    @include underline-0a;
 
       &.silent {
         border-bottom: none; }
@@ -157,20 +162,10 @@ nav {
 
 
 .collection {
-
-  ul {
-  }
-
-  li {
-  }
-
 }
 
 .intro {
   margin-bottom: 6rem;
-
-  ul {
-  }
 
   li {
     &:last-child {
@@ -184,20 +179,65 @@ nav {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
-
 }
 
 .about-header {
 
+  max-width: 40rem;
+  h1 {
+    margin-bottom: 2rem; }
+
+  @include lg {
+
+    max-width: 50rem;
+    h1 {
+      margin-bottom: 3rem; }
+  }
 }
 
-.experience, .awards {
+.experience, .awards, .credits {
+  max-width: 40rem;
+
+  @include lg {
+    max-width: 50rem; }
+}
+
+.experience, .awards, .credits {
+
+  .label {
+    margin-bottom: 2rem;
+
+    @include lg {
+        margin-bottom: 3rem;}
+  }
+
+  ul {
+    margin-bottom: 2rem;
+
+    @include lg {
+      margin-bottom: 3rem; }
+  }
+
 }
 
 
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.project {
+.project-header {
 
+  max-width: 40rem;
+  h1 {
+    margin-bottom: 2rem; }
+
+  p {
+  }
+
+
+  @include lg {
+
+    max-width: 50rem;
+    h1 {
+      margin-bottom: 3rem; }
+  }
 }

@@ -25,15 +25,15 @@
 }
 
 
-@mixin vertical-rythm {
-  margin: 0 0 1.5rem 0;
+@mixin vertical-rythm-1 {
+  margin-bottom: 1rem;
 
   @include sm {
-    margin: 0 0 2rem 0; }
+    margin-bottom: 1.5rem; }
   @include md {
-    margin: 0 0 2.5rem 0; }
+    margin-bottom: 2rem; }
   @include lg {
-    margin: 0 0 3rem 0; }
+    margin-bottom: 2.5rem; }
 }
 
 @mixin content-end {
@@ -46,8 +46,16 @@
       margin-bottom: 10rem; }
 }
 
-@mixin underline-0 {
+@mixin underline-0a {
   border-bottom: 1px solid $primary-0;
+  -webkit-transition: border-bottom-color 200ms ease-out;
+  -moz-transition: border-bottom-color 200ms ease-out;
+  -o-transition: border-bottom-color 200ms ease-out;
+  transition: border-bottom-color 200ms ease-out;
+}
+
+@mixin underline-0b {
+  border-bottom: 1px solid $secondary;
   -webkit-transition: border-bottom-color 200ms ease-out;
   -moz-transition: border-bottom-color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out;

@@ -2,16 +2,13 @@
 <html>
 {% include head.html %}
 <body>
-  {% include header-page.html %}
   <article class="project container-fluid">
-
+    {% include header-page.html %}
     <section class="sub-section project-header">
       <h1>
         {{ page.title }}
       </h1>
-      <div class="content">
         {{ content }}
-      </div>
     </section>
 
     <section class="sub-section project-images">
