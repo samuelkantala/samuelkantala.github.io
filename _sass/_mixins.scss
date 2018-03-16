@@ -46,6 +46,20 @@
       margin-bottom: 10rem; }
 }
 
+@mixin big-text {
+  font-size: 1.5rem;
+  line-height: calc(4/3);
+
+  @include sm {
+    font-size: 2rem; }
+
+  @include md {
+    font-size: 3rem; }
+
+  @include lg {
+    font-size: 3.5rem; }
+}
+
 @mixin p-link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
   color: $p-link-color;
   border-bottom: $p-link-underline-width solid $p-link-underline-color;

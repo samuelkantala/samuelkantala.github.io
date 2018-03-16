@@ -1,29 +1,42 @@
+/* Selection
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+::-moz-selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+:focus {
+	outline: 0;
+}
+
+
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.connect {}
+
+.connect-home {
+  flex-shrink: 0;
+}
+.connect-about {}
+
 .greetings {
 
+  flex: 1 0 auto;
+
   p {
-    font-size: 2rem;
-    line-height: 2.5rem;
-
-    @include sm {
-      font-size: 2.5rem;
-      line-height: 3rem; }
-
-    @include md {
-      font-size: 3rem;
-      line-height: 3.5rem; }
-
-    @include lg {
-      font-size: 3.5rem;
-      line-height: 4rem; }
-    }
+    @include big-text;
+  }
 
   .previous {
     color: $secondary;
     position: relative;
-    display: inline-block;
   }
 
   .previous::before {
@@ -36,8 +49,6 @@
   }
 
   .work {
-    display: inline-block;
-    padding-bottom: .125rem;
     @include p-link-style($primary, $secondary, 1px);
 
     &:hover,
@@ -71,9 +82,6 @@
 }
 
 .home, .about, .project {
-  @include content-end;
-  font-size: .9375rem;
-  line-height: 1.5rem;
 
   @include sm {
     font-size: 1rem;
@@ -85,6 +93,13 @@
     line-height: 2rem;
   }
 }
+
+.home, .about {
+  @include flex-box;
+  flex-direction: column;
+  height: 100vh;
+}
+
 
 .row {
   @include flex-box;
@@ -123,6 +138,7 @@
 
 header {
   @include flex-box;
+  flex-shrink: 0;
 }
 
 nav {

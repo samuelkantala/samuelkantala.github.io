@@ -84,23 +84,6 @@ p {
 }
 
 
-/* Breakpoints
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* sm */
-@media only screen and (min-width: 48em) {
-  }
-
-/* md */
-@media only screen and (min-width: 64em) {
-  }
-
-/* lg */
-@media only screen and (min-width: 75em) {
-  }
-
-
-
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -123,15 +106,3 @@ a {
   &:link {
   color: inherit; }
 }
-
-/* Images
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-img {
-  max-width: 100%; }
-
-.image img {
-  display: block;
-  object-fit: fill;
-  height: auto;
-  width: 100%; }
