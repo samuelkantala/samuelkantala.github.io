@@ -2,24 +2,10 @@
 <html>
 {% include head.html %}
 <body>
-  <section class="home container-fluid">
+  <article class="home container-fluid">
     {% include header-home.html %}
-
-    <!-- Intro -->
-
-    <section class="intro">
-      <ul>
-        <li>
-          <h1><a href="/about">About</a></h1>
-        </li>
-        <li>
-          <h1><a href="/about" class="silent">Hello@samsam.design</a></h1>
-        </li>
-      </ul>
-    </section>
-
-    {% include collection.html %}
-
-  </section>
+    {% include greetings.html %}
+    {% include home-links.html %}
+  </article>
 </body>
 </html>

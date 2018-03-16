@@ -1,6 +1,58 @@
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.greetings {
+
+  p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+
+    @include sm {
+      font-size: 2.5rem;
+      line-height: 3rem; }
+
+    @include md {
+      font-size: 3rem;
+      line-height: 3.5rem; }
+
+    @include lg {
+      font-size: 3.5rem;
+      line-height: 4rem; }
+    }
+
+  .previous {
+    color: $secondary;
+    position: relative;
+    display: inline-block;
+  }
+
+  .previous::before {
+    content: '';
+    border-bottom: 1px solid $secondary;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  .work {
+    display: inline-block;
+    padding-bottom: .125rem;
+    @include p-link-style($primary, $secondary, 1px);
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include p-link-style($accent, $accent, 1px);
+    }
+  }
+
+  .readmore {
+    color: $accent;
+    display: inline-block;
+  }
+}
+
 .container-fluid {
   margin: 0 auto;
   max-width: $container-width-max;
@@ -77,6 +129,11 @@ nav {
 
 }
 
+.header-top {
+  @include vertical-rythm-1; }
+
+.header-bot {}
+
 .header {
   justify-content: flex-start;
   align-items: center;
@@ -96,72 +153,24 @@ nav {
   }
 }
 
-.header-home {
-
-}
-
-.header-page {
-  @include vertical-rythm-1;
-}
-
-
-#close {
-  fill: $primary;
-  -webkit-transition: border-bottom-color 200ms ease-out;
-  -moz-transition: border-bottom-color 200ms ease-out;
-  -o-transition: border-bottom-color 200ms ease-out;
-  transition: border-bottom-color 200ms ease-out;
-
-  &:hover,
-  &:focus,
-  &:active {
-    fill: $accent;
-    -webkit-transition: border-bottom-color 200ms ease-out;
-    -moz-transition: border-bottom-color 200ms ease-out;
-    -o-transition: border-bottom-color 200ms ease-out;
-    transition: border-bottom-color 200ms ease-out;
-  }
-}
-
-
 /* Home
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.home {
+
+.home {}
+
+.home-links {
 
   ul {
 
   }
 
   li {
-    @include vertical-rythm-1;
-  }
 
-  h1 {
-    display: inline;
-
-    a {
-    display: inline;
-    padding-bottom: .125rem;
-    @include underline-0a;
-
-      &.silent {
-        border-bottom: none; }
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      a {
-        @include underline-1;
-        &.silent {
-          border-bottom: none; }
-      }
+    &:last-child {
+      color: $secondary;
     }
   }
-}
 
-
-.collection {
 }
 
 .intro {

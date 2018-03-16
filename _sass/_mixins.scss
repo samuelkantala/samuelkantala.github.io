@@ -46,26 +46,11 @@
       margin-bottom: 10rem; }
 }
 
-@mixin underline-0a {
-  border-bottom: 1px solid $primary-0;
-  -webkit-transition: border-bottom-color 200ms ease-out;
-  -moz-transition: border-bottom-color 200ms ease-out;
-  -o-transition: border-bottom-color 200ms ease-out;
-  transition: border-bottom-color 200ms ease-out;
-}
-
-@mixin underline-0b {
-  border-bottom: 1px solid $secondary;
-  -webkit-transition: border-bottom-color 200ms ease-out;
-  -moz-transition: border-bottom-color 200ms ease-out;
-  -o-transition: border-bottom-color 200ms ease-out;
-  transition: border-bottom-color 200ms ease-out;
-}
-
-@mixin underline-1 {
-  border-bottom: 1px solid $primary;
-  -webkit-transition: border-bottom-color 200ms ease-out;
-  -moz-transition: border-bottom-color 200ms ease-out;
-  -o-transition: border-bottom-color 200ms ease-out;
-  transition: border-bottom-color 200ms ease-out;
+@mixin p-link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
+  color: $p-link-color;
+  border-bottom: $p-link-underline-width solid $p-link-underline-color;
+  -webkit-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+  -moz-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+  -o-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+  transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
 }

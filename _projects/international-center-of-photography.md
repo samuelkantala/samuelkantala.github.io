@@ -1,6 +1,7 @@
 ---
 layout: project
 title: International Center of Photography
+header: Back
 years: 2014
 role: Designer
 permalink: /international-center-of-photography

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: A Journey Through Middle-Earth
+header: Back
 years: 2014
 role: Designer
 permalink: /a-journey-through-middle-earth

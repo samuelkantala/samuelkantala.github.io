@@ -5,9 +5,10 @@ body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5rem;
   font-weight: normal;
-  font-family: "sansText", Garamond, Baskerville, "Times New Roman", serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
+  font-weight: 300;
   color: $primary; }
 
 
@@ -28,8 +29,8 @@ p {
 
 h1,
 h2, {
-  font-family: "Display", Garamond, Baskerville, "Times New Roman", serif;
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 h1 {

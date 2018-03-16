@@ -1,6 +1,7 @@
 ---
 layout: project
 title: The New York Times Conferences
+header: Back
 years: 2013
 role: Designer
 permalink: /the-new-york-times-conferences
