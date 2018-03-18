@@ -1,4 +1,10 @@
 
+@mixin xs() {
+  @media only screen and (min-width: $xs) {
+    @content;
+  }
+}
+
 @mixin sm() {
   @media only screen and (min-width: $sm) {
     @content;
@@ -48,16 +54,19 @@
 
 @mixin big-text {
   font-size: 1.5rem;
-  line-height: calc(4/3);
+  line-height: calc(1.25em + (.25rem));
+
+  @include xs {
+    font-size: 1.75rem; }
 
   @include sm {
     font-size: 2rem; }
 
   @include md {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
 
   @include lg {
-    font-size: 3.5rem; }
+    font-size: 3rem; }
 }
 
 @mixin p-link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {

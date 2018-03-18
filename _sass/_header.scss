@@ -1,0 +1,39 @@
+header {
+  @include flex-box;
+  flex-shrink: 0;
+}
+
+nav {
+
+}
+
+.header-top {
+  margin-bottom: 3rem;
+
+  @include lg {
+    margin-bottom: 4rem; }
+}
+
+.header-bot {}
+
+.header {
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  font-size: .9375rem;
+  line-height: 1.5rem;
+
+  a {
+    color: $accent;
+    display: inline;
+  }
+
+  @include sm {
+    font-size: 1rem;
+  }
+
+  @include lg {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}

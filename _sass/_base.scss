@@ -106,3 +106,20 @@ a {
   &:link {
   color: inherit; }
 }
+
+/* Selection Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+::-moz-selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+:focus {
+	outline: 0;
+}
