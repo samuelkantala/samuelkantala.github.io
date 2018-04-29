@@ -1,14 +1,35 @@
 @import 'header';
 
+.secondary {
+  color: $secondary;
+}
+
 
 /* Home
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cover {
+
+  margin-top: 30vh;
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+
+}
+
 
 .home {
 
   .links {
     padding: 2rem 0;
     flex-shrink: 0;
+  }
+
+  .readmore {
+    color: $accent;
+    display: inline-block;
   }
 
 }
@@ -114,13 +135,12 @@
 .about-header,
 .experience,
 .awards,
-.credits {
-  max-width: 40rem;
+.credits,
+.contact {
 
   .label {
     display: inline-block;
     margin-bottom: 1.5rem;
-    font-weight: 500;
   }
 
   ul {
@@ -128,7 +148,6 @@
   }
 
   @include lg {
-    max-width: 50rem;
 
     ul, .label {
       margin-bottom: 2rem; }
@@ -136,10 +155,12 @@
   }
 }
 
-.awards {
+.awards,
+.experience {
   li {
-    &:first-child {
       color: $secondary;
+    &:first-child {
+      color: $primary;
     }
   }
 }
@@ -147,6 +168,5 @@
 .credits {
   .team {
     color: $secondary;
-    font-weight: 500;
   }
 }

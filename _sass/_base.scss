@@ -5,10 +5,11 @@ body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5rem;
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "NeufileGrotesk-Medium", sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
-  font-weight: 300;
+  font-weight: normal;
+  background-color: $background;
   color: $primary; }
 
 
@@ -20,6 +21,7 @@ h1,
 h2,
 p {
   margin: 0;
+  font-weight: normal;
   -moz-font-feature-settings:"kern" 1;
   -ms-font-feature-settings:"kern" 1;
   -o-font-feature-settings:"kern" 1;
@@ -27,55 +29,47 @@ p {
   font-feature-settings:"kern" 1;
   font-kerning: normal; }
 
-h1,
-h2, {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
 h1 {
-  font-size: 2rem;
-  line-height: 2.5rem; }
+  font-size: 1.625rem;
+  line-height: 2rem; }
 
 h2 {
   font-size: 1.5rem;
-  line-height: 1.2em; }
+  line-height: 2rem; }
 
 p {
-  font-size: .9375rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
+
+@include xs {
+
+  h1 {
+      font-size: 1.875rem;
+      line-height: 2rem; }
+}
 
 @include sm {
 
   h1 {
-    font-size: 2.5rem;
-    line-height: 3rem; }
-
-  h2 {
-    font-size: 1.5rem;
-    line-height: 2.5rem; }
-
-  p {
-    font-size: 1rem; }
+    font-size: 1.875rem;
+    line-height: 2rem; }
 }
 
 @include md {
 
   h1 {
-    font-size: 3rem;
-    line-height: 3.5rem; }
+    font-size: 2.75rem;
+    line-height: 3rem;
+    letter-spacing: -.75px; }
 }
 
 @include lg {
 
   h1 {
-    font-size: 3.5rem;
-    line-height: 4rem; }
-
-  h2 {
-    font-size: 2.25rem;
-    line-height: 2.5rem; }
+    font-size: 3.75rem;
+    line-height: 4rem;
+    letter-spacing: -1px; }
 
   p {
     font-size: 1.25rem;

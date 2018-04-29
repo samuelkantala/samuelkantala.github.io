@@ -1,1 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+
+
+@font-face {
+	font-family: 'NeufileGrotesk-Medium';
+	src: url('/assets/fonts/neufile-grotesk-medium.eot');
+	src: url('/assets/fonts/neufile-grotesk-medium.eot?#iefix') format('embedded-opentype'),
+             url('/assets/fonts/neufile-grotesk-medium.woff2') format('woff2'),
+	     url('/assets/fonts/neufile-grotesk-medium.woff') format('woff'),
+	     url('/assets/fonts/neufile-grotesk-medium.ttf') format('truetype'),
+	     url('/assets/fonts/neufile-grotesk-medium.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NeufileGrotesk-Regular';
+	src: url('/assets/fonts/neufile-grotesk-regular.eot');
+	src: url('/assets/fonts/neufile-grotesk-regular.eot?#iefix') format('embedded-opentype'),
+             url('/assets/fonts/neufile-grotesk-regular.woff2') format('woff2'),
+	     url('/assets/fonts/neufile-grotesk-regular.woff') format('woff'),
+	     url('/assets/fonts/neufile-grotesk-regular.ttf') format('truetype'),
+	     url('/assets/fonts/neufile-grotesk-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
