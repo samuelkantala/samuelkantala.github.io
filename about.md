@@ -1,5 +1,5 @@
 ---
-layout: about-2
+layout: about
 title: About
 permalink: /about
 header: Back

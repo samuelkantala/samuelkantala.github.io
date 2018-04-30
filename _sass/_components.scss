@@ -10,7 +10,6 @@
 
 .cover {
 
-  margin-top: 30vh;
   align-items: flex-start;
 
   h1 {
@@ -79,23 +78,6 @@
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.container-fluid {
-  margin: 0 auto;
-  max-width: $container-width-max;
-  padding-right: 1rem;
-  padding-left: 1rem;
-
-  @include sm {
-    width: $container-width-sm;
-  }
-  @include md {
-    width: $container-width-md;
-  }
-  @include lg {
-    width: $container-width-lg;
-  }
-}
-
 .home,
 .about,
 .project {
@@ -119,10 +101,10 @@
 }
 
 .sub-section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 
   @include lg {
-    margin-bottom: 4rem; }
+    margin-bottom: 6rem; }
 }
 
 
@@ -136,7 +118,7 @@
 .experience,
 .awards,
 .credits,
-.contact {
+.connect {
 
   .label {
     display: inline-block;
@@ -144,7 +126,7 @@
   }
 
   ul {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   @include lg {
@@ -163,6 +145,10 @@
       color: $primary;
     }
   }
+}
+
+.connect {
+  padding-bottom: 2rem;
 }
 
 .credits {

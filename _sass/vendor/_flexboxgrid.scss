@@ -3,6 +3,7 @@
   max-width: $container-width-max;
   padding-right: 1rem;
   padding-left: 1rem;
+
   @include sm {
     width: $container-width-sm;
   }

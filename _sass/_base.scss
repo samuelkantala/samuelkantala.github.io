@@ -105,13 +105,13 @@ a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ::-moz-selection {
-	background-color: $accent;
-	color: #fff;
+	background-color: $primary;
+	color: $background;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+	background-color: $primary;
+	color: $background;
 }
 
 :focus {

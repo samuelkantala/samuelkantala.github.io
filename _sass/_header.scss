@@ -7,32 +7,50 @@ nav {
 
 }
 
-.header-top {
-  margin-bottom: 3rem;
 
-  @include lg {
-    margin-bottom: 4rem; }
+.header-page {
+  justify-content: flex-end;
 }
 
-.header-bot {}
-
-.header {
+.header-home {
   justify-content: flex-start;
-  align-items: center;
-  padding: 2rem 0;
-  font-size: .9375rem;
-  line-height: 1.5rem;
+}
 
-  a {
-    color: $accent;
-    display: inline;
-  }
-
-  @include sm {
-    font-size: 1rem;
-  }
+.close {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/svg/close32.svg);
 
   @include lg {
+    width: 3rem;
+    height: 3rem;
+    background-image: url(/assets/svg/close48.svg);
+  };
+}
+
+
+.header {
+  align-items: center;
+  height : 6rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 10vh;
+
+
+  a {
+    display: flex;
+    color: $accent;
+  }
+
+  @include md {
+
+    height: 9rem;
+    margin-bottom: 20vh;
+  }
+
+
+  @include lg {
+
     font-size: 1.25rem;
     line-height: 2rem;
   }
