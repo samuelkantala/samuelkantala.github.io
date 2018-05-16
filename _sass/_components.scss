@@ -97,7 +97,6 @@
 .about {
   @include flex-box;
   flex-direction: column;
-  height: 100vh;
 }
 
 .sub-section {
