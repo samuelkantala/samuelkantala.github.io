@@ -30,46 +30,130 @@
   display: flex;
 }
 
+/* margins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@mixin vertical-rythm-1 {
-  margin-bottom: 1rem;
-
-  @include sm {
-    margin-bottom: 1.5rem; }
-  @include md {
-    margin-bottom: 2rem; }
-  @include lg {
-    margin-bottom: 2.5rem; }
-}
-
-@mixin content-end {
-    margin-bottom: 4rem;
-    @include sm {
-      margin-bottom: 6rem; }
-    @include md {
-      margin-bottom: 8rem; }
-    @include lg {
-      margin-bottom: 10rem; }
-}
-
-@mixin big-text {
-  font-size: 1.5rem;
-  line-height: calc(1.25em + (.25rem));
+@mixin margin-t ($tde, $txs, $tsm, $tmd, $tlg) {
+  margin-top: $tde;
 
   @include xs {
-    font-size: 1.75rem; }
-
+    margin-top: $txs; }
   @include sm {
-    font-size: 2rem; }
-
+    margin-top: $tsm; }
   @include md {
-    font-size: 2.5rem; }
-
+    margin-top: $tmd; }
   @include lg {
-    font-size: 3rem; }
+    margin-top: $tlg; }
 }
 
-@mixin p-link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
+@mixin margin-b ($bde, $bxs, $bsm, $bmd, $blg) {
+  margin-bottom: $bde;
+
+  @include xs {
+    margin-bottom: $bxs; }
+  @include sm {
+    margin-bottom: $bsm; }
+  @include md {
+    margin-bottom: $bmd; }
+  @include lg {
+    margin-bottom: $blg; }
+}
+
+@mixin margin-r ($rde, $rxs, $rsm, $rmd, $rlg) {
+  margin-right: $rde;
+
+  @include xs {
+    margin-right: $rxs; }
+  @include sm {
+    margin-right: $rsm; }
+  @include md {
+    margin-right: $rmd; }
+  @include lg {
+    margin-right: $rlg; }
+}
+
+@mixin margin-l ($lde, $lxs, $lsm, $lmd, $llg) {
+  margin-left: $lde;
+
+  @include xs {
+    margin-left: $lxs; }
+  @include sm {
+    margin-left: $lsm; }
+  @include md {
+    margin-left: $lmd; }
+  @include lg {
+    margin-left: $llg; }
+}
+
+
+/* fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin font-sm {
+  font-size: 0.875rem;
+  line-height: 1.333;
+
+  @include xs {
+    font-size: 1rem;
+  }
+  @include sm {}
+
+  @include md {}
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-md {
+  font-size: 1rem;
+  line-height: 1.125;
+  letter-spacing: -.025em;
+
+  @include xs {
+    font-size: 1.125rem;
+  }
+
+  @include sm {
+    font-size: 1.25rem;
+  }
+
+  @include md {
+    font-size: 1.5rem;
+  }
+
+  @include lg {
+    font-size: 2rem;
+  }
+}
+
+
+@mixin font-lg {
+  font-size: 1.125rem;
+  line-height: 1.2em;
+  letter-spacing: -.025em;
+
+  @include xs {
+    font-size: 1.25rem;
+  }
+
+  @include sm {
+    font-size: 1.5rem;
+  }
+
+  @include md {
+    font-size: 2rem;
+  }
+
+  @include lg {
+    font-size: 2.5rem;
+  }
+}
+
+/* misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
   color: $p-link-color;
   border-bottom: $p-link-underline-width solid $p-link-underline-color;
   -webkit-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;

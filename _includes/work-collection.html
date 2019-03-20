@@ -1,0 +1,20 @@
+<section class="work-collection">
+    {% assign projects = (site.projects | sort: 'order') %}
+    {% for project in projects %}
+    <div class="work-item">
+      <div class="image-16-9">
+        <a href="{{ project.permalink }}">
+          <img src="{{ project.cover }}">
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h2>{{ project.title }}</h2>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h2><span class="secondary">{{ project.subtitle }}</span></h2>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</section>

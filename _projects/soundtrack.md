@@ -1,12 +1,19 @@
 ---
 layout: project
-title: Soundtrack
-header: Back
-years: 2015 - 2017
-role: Product Designer
 permalink: /soundtrack
-order: 3
+title: soundtrack
+subtitle: the world’s leading commercial music streaming service
+years: 2015 - 2017
+role: product designer
+cover: ../assets/images/soundtrack-1.png
+images:
+  - ../assets/images/test-3.jpg
+  - ../assets/images/test-2.jpg
+  - ../assets/images/test-1.jpg
+order: 2
+prev-link: /breather
+next-link: /spotify-business
 ---
-Spotify Business is a powerful music streaming platform, licensed for commercial and public spaces. It’s a product specifically created to grow your business with music. It comes with tools to steer all of your locations from one place and schedule your music ahead of time based on the needs of your business.
+Soundtrack is a music streaming service that amplifies experiences in commercial and public spaces. It was launched in 2016 by Spotify-backed startup, Soundtrack Your Brand.
 
-I was fortunate to have been part of designing Spotify Business, from early concept, through launch, and into a fully profitable product. During that time I was given the chance to solve problems related to control, content, and licensing for small businesses as well as global enterprises. One of my most notable contributions was designing and maintaining the product design system.
+As part of the team that just prior had created Spotify Business, I went on to work on Soundtrack. We set out with the high ambition to change the entire commercial music industry.

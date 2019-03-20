@@ -1,10 +1,8 @@
 $primary: rgba(255, 255, 255, 1);
+$primary-0: rgba(255, 255, 255, 0);
 $secondary: rgba(255, 255, 255, 0.4);
-$tertirary: #DFE1E6;
-$background: rgba(10, 11, 12, 1);
-$accent: rgba(255, 130, 0, 1);
-
-$primary-0: rgba(23, 24, 26, 0);
+$background: rgba(23, 24, 26, 1);
+$background-opacity: rgba(23, 24, 26, 0);
 
 $xs: 22em;
 $sm: 30em;
@@ -14,4 +12,4 @@ $lg: 64em;
 $container-width-sm: 90%;
 $container-width-md: 90%;
 $container-width-lg: 90%;
-$container-width-max: 100rem;
+$container-width-max: 64rem;
