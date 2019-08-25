@@ -2,6 +2,7 @@
 <html>
 {% include head.html %}
 <body>
+<<<<<<< HEAD
   <article class="about container-fluid">
     {% include header.html work='item-off' about='item-on' %}
     <section class="profile">
@@ -97,6 +98,97 @@
         </div>
       </div>
     </section>
+=======
+  {% include header.html %}
+  <article class="about container-fluid">
+  <header class="about-header">
+    <div class="row">
+      <div class="col-xs-12 col-sm-offset-4 col-sm-8 col-md-offset-4 col-md-8 col-lg-offset-4 col-lg-8">
+        <h1 class="title"> {{ page.title }} </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <div class="meta">
+    <ul>
+      <li>Hello@samsam.design</li>
+      <li>Linkedin</li>
+      <li>VSCO</li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+    <div class="about-content">
+    {{ content }}
+    </div>
+  </div>
+  </div>
+  </header>
+  <section class="sub-section experience">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <p class="secondary">Experience</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <ul>
+          <li>Senior Product Designer, Breather</li>
+          <li>2017 - Current</li>
+        </ul>
+        <ul>
+          <li>Product Designer, Soundtrack Your Brand</li>
+          <li>2015 - 2017</li>
+        </ul>
+        <ul>
+          <li>Designer, North Kingdom</li>
+          <li>2014 - 2015</li>
+        </ul>
+        <ul>
+          <li>Designer, Your Majesty</li>
+          <li>2013 - 2014</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sub-section education">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <p class="secondary">Education</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <ul>
+          <li>Interactive Art Director, Hyper Island</li>
+          <li>2012 - 2013</li>
+        </ul>
+        <ul>
+          <li>IT & Communication, Stockholm Univerisity</li>
+          <li>2011 - 2012</li>
+        </ul>
+        <ul>
+          <li>Interaction Design, Royal School of Technology</li>
+          <li>2010 - 2011</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sub-section awards">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <p class="secondary">Awards</p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <ul>
+          <li>Sweden's National Design Award</li>
+          <li>Awwwards Site of The Year</li>
+          <li>One Show UX/UI Gold</li>
+          <li>FWA Cutting Edge Project</li>
+          <li>3x FWA Site of The Day</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+>>>>>>> parent of bed7fdc... Save
   </article>
+  {% include footer.html %}
 </body>
 </html>

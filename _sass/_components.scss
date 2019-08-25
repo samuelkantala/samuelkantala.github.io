@@ -8,8 +8,28 @@
   color: $secondary;
 }
 
+<<<<<<< HEAD
 .color-primary {
   color: $primary;
+=======
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: calc(2rem + 20vh);
+  a {
+    text-decoration: none;
+  }
+  a:visited,
+  a:link {
+    text-decoration: none;
+    color: #17181A;
+  }
+  @include md {
+    height: 7rem;
+  }
+>>>>>>> parent of bed7fdc... Save
 }
 
 .font-lg {
@@ -17,10 +37,13 @@
   cursor: default;
 }
 
+<<<<<<< HEAD
 .rip {
   color: $primary;
   cursor: not-allowed;
 }
+=======
+>>>>>>> parent of bed7fdc... Save
 
 a.link-inline, a.link-standard
   {
@@ -34,7 +57,21 @@ a.link-inline, a.link-standard
 /* collection
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 .work-collection {
+=======
+.intro {
+  margin: 4rem 0 8rem 0;
+  h1 {
+    font-size: calc(1.5rem + .05*(100vw - 20rem));
+    line-height: 1.25em; }
+  @include sm {
+    h1 {
+      line-height: 1.125em;
+      font-size: calc(3rem + .02*(100vw - 48rem)); }
+  }
+}
+>>>>>>> parent of bed7fdc... Save
 
   .image-16-9 {
     @include margin-b (0.5rem, 0.5rem, 0.75rem, 1rem, 1.5rem);
@@ -48,11 +85,24 @@ a.link-inline, a.link-standard
 /* project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 .project {
+=======
+.title {
+  margin-bottom: 2rem;
+  @include title;
+}
+
+.divider {
+  height: 1rem;
+  border-top: 1px solid $tertirary;
+}
+>>>>>>> parent of bed7fdc... Save
 
   .project-cover {
     align-items: flex-start;
 
+<<<<<<< HEAD
     h1 {
       @include margin-b (1.6875rem, 1.96875rem, 2.25rem, 3.375rem, 5.0625rem);
 
@@ -101,11 +151,37 @@ a.link-inline, a.link-standard
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .home-cover {
+=======
+.secondary {
+  color: $secondary;
+}
+
+/* Project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.about-header {
+  @include padding-spacer;
+
+  .meta {
+    margin-bottom: 2rem;
+    color: $secondary;
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    li {
+      margin: 0;
+    }
+  }
+>>>>>>> parent of bed7fdc... Save
 
   align-items: flex-start;
   @include margin-b (4rem, 6rem, 8rem, 10rem, 12rem);
 }
 
+<<<<<<< HEAD
 
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -121,6 +197,26 @@ a.link-inline, a.link-standard
 
   @include margin-b (4rem, 4rem, 5rem, 6rem, 8rem);
 
+=======
+.sub-section {
+  @include padding-spacer;
+}
+
+.experience,
+.education {
+  ul{
+    margin-bottom: 1rem;
+  }
+  li:last-child {
+    color: $secondary;
+  }
+}
+
+.awards {
+  li {
+    margin-bottom: 1rem;
+  }
+>>>>>>> parent of bed7fdc... Save
 }
 
 /* About

@@ -5,7 +5,11 @@ body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5rem;
   font-weight: normal;
+<<<<<<< HEAD
   font-family: "sans", sans-serif;
+=======
+  font-family: "Graphik", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+>>>>>>> parent of bed7fdc... Save
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
   font-variant-numeric: oldstyle-nums; /* Old style numbers */
@@ -37,10 +41,22 @@ p {
   font-feature-settings:"kern" 1;
   font-kerning: normal; }
 
+<<<<<<< HEAD
+=======
+h1,
+h2,
+h3 {
+  line-height: 1.125em;
+  font-weight: bold;
+  letter-spacing: -.025em;
+}
+
+>>>>>>> parent of bed7fdc... Save
 h1 {
   @include font-lg }
 
 h2 {
+<<<<<<< HEAD
   @include font-md }
 
 /*
@@ -52,6 +68,47 @@ p {
 
   @include lg {
     max-width: 48rem;
+=======
+  font-size: 1.25rem;
+}
+
+h3 {
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin-bottom: 1.5rem;
+  max-width: 50rem;
+}
+
+@include sm {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+}
+
+@include md {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6em;
+    margin-bottom: 2rem;
+>>>>>>> parent of bed7fdc... Save
   }
 }
 */

@@ -105,6 +105,7 @@
   }
 }
 
+<<<<<<< HEAD
 @mixin font-md {
   font-size: 1rem;
   line-height: 1.125;
@@ -160,4 +161,22 @@
   -moz-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+=======
+
+@mixin title {
+    color: red;
+    font-size: 3rem;
+    @include sm {
+      font-size: 5rem;
+      }
+}
+
+@mixin padding-spacer {
+  padding: 2rem 0 4rem 0;
+  border-bottom: 1px solid $tertirary;
+  @include md {
+  padding: 3rem 0 6rem 0;
+  border-bottom: 1px solid $tertirary;
+ }
+>>>>>>> parent of bed7fdc... Save
 }
