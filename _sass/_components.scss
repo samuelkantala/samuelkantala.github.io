@@ -19,6 +19,7 @@
 
 }
 
+<<<<<<< HEAD
 
 .home {
 
@@ -65,17 +66,27 @@ nav {
     font-size: 1.25rem;
     line-height: 1.5em;
   }
+=======
+.color-primary {
+  color: $primary;
+>>>>>>> parent of 86b05fb... edits
 }
 
 .brand {
 }
 
+<<<<<<< HEAD
 #close {
   fill: $secondary;
   @include transition(fill 200ms ease-out){}
   &:hover {
     fill: $primary;
   }
+=======
+.rip {
+  color: $primary;
+  cursor: not-allowed;
+>>>>>>> parent of 86b05fb... edits
 }
 
 /* Footer
@@ -111,6 +122,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .greetings {
 
   flex: 1 0 auto;
@@ -140,6 +152,9 @@ footer {
       }
     }
   }
+=======
+.work-collection {
+>>>>>>> parent of 86b05fb... edits
 
   .external {
     color: $secondary;
@@ -156,6 +171,7 @@ footer {
     position: relative;
   }
 
+<<<<<<< HEAD
   .previous::before {
     content: '';
     border-bottom: 1px solid $primary;
@@ -193,6 +209,9 @@ footer {
   height: 1rem;
   border-top: 1px solid $tertirary;
 }
+=======
+.project {
+>>>>>>> parent of 86b05fb... edits
 
 .spacer {
   margin-bottom: 3rem;
@@ -207,12 +226,17 @@ footer {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .home,
 .about,
 .project {
 =======
 /* Collection
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+=======
+    h1 {
+      @include margin-b (1.6875rem, 1.96875rem, 2.25rem, 3.375rem, 5.0625rem);
+>>>>>>> parent of 86b05fb... edits
 
 .collection {
 >>>>>>> parent of 3c69d87... Style Update
@@ -287,6 +311,7 @@ footer {
       margin: 0; }
   }
 
+<<<<<<< HEAD
   p {
     color: $secondary;
   }
@@ -335,6 +360,14 @@ footer {
 <<<<<<< HEAD
 .about {
 }
+=======
+.home-cover {
+
+  align-items: flex-start;
+  @include margin-b (4rem, 6rem, 8rem, 10rem, 12rem);
+}
+
+>>>>>>> parent of 86b05fb... edits
 
 .about-header,
 .experience,
@@ -356,6 +389,7 @@ footer {
     ul, .label {
       margin-bottom: 2rem; }
 
+<<<<<<< HEAD
 =======
   .content {
     max-width: 50rem;
@@ -366,6 +400,8 @@ footer {
   padding: 2rem 0 2rem 0;
   @include md {
     padding: 6rem 0 6rem 0; }
+=======
+>>>>>>> parent of 86b05fb... edits
 }
 
 

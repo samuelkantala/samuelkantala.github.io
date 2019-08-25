@@ -43,6 +43,7 @@
     margin-bottom: 2.5rem; }
 }
 
+<<<<<<< HEAD
 @mixin content-end {
     margin-bottom: 4rem;
     @include sm {
@@ -51,6 +52,61 @@
       margin-bottom: 8rem; }
     @include lg {
       margin-bottom: 10rem; }
+=======
+@mixin margin-l ($lde, $lxs, $lsm, $lmd, $llg) {
+  margin-left: $lde;
+
+  @include xs {
+    margin-left: $lxs; }
+  @include sm {
+    margin-left: $lsm; }
+  @include md {
+    margin-left: $lmd; }
+  @include lg {
+    margin-left: $llg; }
+}
+
+
+/* fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@mixin font-sm {
+  font-size: 0.875rem;
+  line-height: 1.333;
+
+  @include xs {
+    font-size: 1rem;
+  }
+  @include sm {}
+
+  @include md {}
+
+  @include lg {
+    font-size: 1.25rem;
+  }
+}
+
+@mixin font-md {
+  font-size: 1rem;
+  line-height: 1.125;
+  letter-spacing: -.025em;
+
+  @include xs {
+    font-size: 1.125rem;
+  }
+
+  @include sm {
+    font-size: 1.25rem;
+  }
+
+  @include md {
+    font-size: 1.5rem;
+  }
+
+  @include lg {
+    font-size: 2rem;
+  }
+>>>>>>> parent of 86b05fb... edits
 }
 
 @mixin big-text {
@@ -77,6 +133,7 @@
   -moz-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+<<<<<<< HEAD
 =======
 $transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-bottom-width 200ms ease-out;
 
@@ -105,4 +162,6 @@ $transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-
 @mixin stroke {
   border-bottom: 1px solid $tertirary;
 >>>>>>> parent of 3c69d87... Style Update
+=======
+>>>>>>> parent of 86b05fb... edits
 }

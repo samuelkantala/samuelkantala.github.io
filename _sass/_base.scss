@@ -6,10 +6,14 @@ body {
   line-height: 1.5rem;
   font-weight: normal;
 <<<<<<< HEAD
+<<<<<<< HEAD
   font-family: "NeufileGrotesk-Medium", sans-serif;
 =======
   font-family: "Atlas Grotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 >>>>>>> parent of 3c69d87... Style Update
+=======
+  font-family: "sans", sans-serif;
+>>>>>>> parent of 86b05fb... edits
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
   font-weight: normal;
@@ -34,6 +38,7 @@ p {
   font-kerning: normal; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 h1,
 h2, {
@@ -42,16 +47,23 @@ h2, {
 }
 
 >>>>>>> parent of 3c69d87... Style Update
+=======
+>>>>>>> parent of 86b05fb... edits
 h1 {
   font-size: 1.625rem;
   line-height: 2rem;
   letter-spacing: -.025em; }
 
 h2 {
+<<<<<<< HEAD
   font-size: 1.5rem;
   line-height: 2rem; }
+=======
+  @include font-md }
+>>>>>>> parent of 86b05fb... edits
 
 p {
+<<<<<<< HEAD
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
@@ -114,6 +126,15 @@ p {
   font-size: 1.25rem;
   line-height: 1.6em;
   margin-bottom: 2rem;
+=======
+  text-transform: lowercase;
+  @include font-sm;
+  @include vertical-b (1.166rem, 1.333rem, 1.333rem, 1.333rem, 1.499rem);
+  max-width: 32rem;
+
+  @include lg {
+    max-width: 48rem;
+>>>>>>> parent of 86b05fb... edits
   }
 
 >>>>>>> parent of 3c69d87... Style Update
