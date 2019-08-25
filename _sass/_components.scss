@@ -38,10 +38,13 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .rip {
   color: $primary;
   cursor: not-allowed;
 }
+=======
+>>>>>>> parent of bed7fdc... Save
 =======
 >>>>>>> parent of bed7fdc... Save
 
@@ -106,6 +109,7 @@ a.link-inline, a.link-standard
     h1 {
       @include margin-b (1.6875rem, 1.96875rem, 2.25rem, 3.375rem, 5.0625rem);
 
+<<<<<<< HEAD
       @include sm {
       max-width: 95%;
       }
@@ -156,6 +160,8 @@ a.link-inline, a.link-standard
   color: $secondary;
 }
 
+=======
+>>>>>>> parent of bed7fdc... Save
 /* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -182,6 +188,7 @@ a.link-inline, a.link-standard
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -202,6 +209,12 @@ a.link-inline, a.link-standard
   @include padding-spacer;
 }
 
+=======
+.sub-section {
+  @include padding-spacer;
+}
+
+>>>>>>> parent of bed7fdc... Save
 .experience,
 .education {
   ul{
