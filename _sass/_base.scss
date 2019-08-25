@@ -5,7 +5,11 @@ body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5rem;
   font-weight: normal;
+<<<<<<< HEAD
   font-family: "NeufileGrotesk-Medium", sans-serif;
+=======
+  font-family: "Atlas Grotesk", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+>>>>>>> parent of 3c69d87... Style Update
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
   font-weight: normal;
@@ -29,6 +33,15 @@ p {
   font-feature-settings:"kern" 1;
   font-kerning: normal; }
 
+<<<<<<< HEAD
+=======
+h1,
+h2, {
+  font-weight: normal;
+  letter-spacing: -.025em;
+}
+
+>>>>>>> parent of 3c69d87... Style Update
 h1 {
   font-size: 1.625rem;
   line-height: 2rem;
@@ -43,19 +56,28 @@ p {
   line-height: 1.5rem;
   margin-bottom: 1.5rem; }
 
+<<<<<<< HEAD
 @include xs {
 
   h1 {
       font-size: 1.875rem;
       line-height: 2rem; }
+=======
+p {
+  margin-bottom: 1.5rem;
+  max-width: 50rem;
+>>>>>>> parent of 3c69d87... Style Update
 }
 
 @include sm {
 
+<<<<<<< HEAD
   h1 {
     font-size: 1.875rem;
     line-height: 2rem; }
 
+=======
+>>>>>>> parent of 3c69d87... Style Update
   p {
     font-size: 1.0625rem;
     line-height: 1.5rem;
@@ -65,12 +87,20 @@ p {
 @include md {
 
   h1 {
+<<<<<<< HEAD
     font-size: 2.75rem;
     line-height: 3rem; }
+=======
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+
+>>>>>>> parent of 3c69d87... Style Update
 }
 
 @include lg {
 
+<<<<<<< HEAD
   h1 {
     font-size: 3.75rem;
     line-height: 4rem; }
@@ -79,6 +109,14 @@ p {
     font-size: 1.375rem;
     line-height: 2rem;
     margin-bottom: 2rem; }
+=======
+  P {
+  font-size: 1.25rem;
+  line-height: 1.6em;
+  margin-bottom: 2rem;
+  }
+
+>>>>>>> parent of 3c69d87... Style Update
 }
 
 
@@ -91,8 +129,19 @@ ul {
   margin: 0; }
 
 li {
+<<<<<<< HEAD
   @include flex-box;
   margin: 0; }
+=======
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin: 0;
+  @include md {
+    font-size: 1.25rem;
+    line-height: 1.6em;
+  }
+}
+>>>>>>> parent of 3c69d87... Style Update
 
 
 /* Links
@@ -102,7 +151,7 @@ a {
   text-decoration: none;
   &:visited,
   &:link {
-  color: inherit; }
+  color: #17181A; }
 }
 
 /* Selection Reset

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import 'header';
 
 .secondary {
@@ -29,18 +30,123 @@
   .readmore {
     color: $accent;
     display: inline-block;
-  }
+=======
+/* header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
 
 }
 
+nav {
+
+}
+
+.site-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.5em;
+
+  a {
+    text-decoration: none;
+  }
+  a:visited,
+  a:link {
+    text-decoration: none;
+    color: #17181A;
+  }
+  @include md {
+    margin-bottom: 2rem;
+    height: 7rem;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+  }
+}
+
+.brand {
+}
+
+#close {
+  fill: $secondary;
+  @include transition(fill 200ms ease-out){}
+  &:hover {
+    fill: $primary;
+  }
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+  background-color: $primary;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  li {
+    color: #fff;
+    margin: 0.5rem 0;
+  }
+  @include sm {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 2rem 0 0;
+    }
+>>>>>>> parent of 3c69d87... Style Update
+  }
+}
+
+<<<<<<< HEAD
 .greetings {
 
   flex: 1 0 auto;
 
   p {
     @include big-text;
+=======
+/* Intro
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  margin: 4rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto 0 0;
   }
 
+  .internal {
+    h1 {
+      margin-right: .5rem;
+      @include md {
+        margin-right: .75rem;
+      }
+    }
+  }
+
+  .external {
+    color: $secondary;
+>>>>>>> parent of 3c69d87... Style Update
+  }
+
+<<<<<<< HEAD
   .previous-2 {
     text-decoration: line-through;
     color: #C0C4CC;
@@ -73,16 +179,50 @@
     color: $accent;
     display: inline-block;
   }
+=======
+
+/* Global
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.title {
+  margin-bottom: 5rem;
+  @include title;
+}
+
+.divider {
+  height: 1rem;
+  border-top: 1px solid $tertirary;
+}
+
+.spacer {
+  margin-bottom: 3rem;
+}
+
+.secondary {
+  color: $secondary;
+>>>>>>> parent of 3c69d87... Style Update
 }
 
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 .home,
 .about,
 .project {
+=======
+/* Collection
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.collection {
+>>>>>>> parent of 3c69d87... Style Update
+
+}
+
+.collection-label {
+  @include stroke;
   p {
+<<<<<<< HEAD
     max-width: 32rem;
   }
 
@@ -114,12 +254,85 @@
 
   @include lg {
     margin-bottom: 6rem; }
+=======
+    color: $secondary;
+    margin: 0 0 2rem 0; }
 }
 
+.collection-item {
+  @include stroke;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include md {
+    padding-top: 3rem;
+    padding-bottom: 3rem; }
 
-/* About
+  h2, p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    margin: 0;
+    @include sm {
+      font-size: 1rem;
+      line-height: 1.5em; }
+    @include lg {
+      font-size: 1.25rem;
+      line-height: 1.6em;
+      margin: 0; }
+  }
+
+  h2 {
+    margin: 0 0 .5rem 0;
+    @include md {
+      margin: 0; }
+  }
+
+  p {
+    color: $secondary;
+  }
+
+
+  .item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Project
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.about {
+  .row {
+    margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 3rem; }
+  }
+>>>>>>> parent of 3c69d87... Style Update
+}
+
+.about-header {
+  @include stroke;
+  padding-bottom: 4rem;
+  @include md {
+    padding-bottom: 6rem; }
+
+  .meta {
+    margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 3rem; }
+    color: $secondary;
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    li {
+      margin: 0;
+    }
+  }
+
+<<<<<<< HEAD
 .about {
 }
 
@@ -143,12 +356,48 @@
     ul, .label {
       margin-bottom: 2rem; }
 
+=======
+  .content {
+    max-width: 50rem;
+  }
+}
+
+.sub-section {
+  padding: 2rem 0 2rem 0;
+  @include md {
+    padding: 6rem 0 6rem 0; }
+}
+
+
+.experience,
+.education {
+  @include stroke;
+}
+
+.experience,
+.education,
+.awards {
+
+  .label {
+    color: $secondary;
+    margin-bottom: 2rem;
+    @include md {
+      margin-bottom: 1rem; }
+  }
+
+  p {
+  color: $secondary;
+  margin-bottom: 0.5rem;
+  @include md {
+    margin-bottom: 1rem; }
+>>>>>>> parent of 3c69d87... Style Update
   }
 }
 
 .awards,
 .experience {
   li {
+<<<<<<< HEAD
       color: $secondary;
     &:first-child {
       color: $primary;
@@ -163,5 +412,71 @@
 .credits {
   .team {
     color: $secondary;
+=======
+    margin-bottom: 0.5rem;
+    @include md {
+      margin-bottom: 1rem; }
+  }
+}
+
+/* Project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project-cover {
+  height: 24rem;
+  width: 100%;
+  background-color: #EFF0F2;
+  @include sm {
+    height: 32rem; }
+  img {
+    height: 100%;
+    object-fit: cover; }
+}
+
+.project {}
+
+.project-header {
+  max-width: 54rem;
+}
+
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  li {
+    margin: 0 1rem 0 0
+  }
+  @include sm {
+    ul {
+      flex-direction: row;
+    }
+    li {
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+.project-paragraphs {
+  max-width: 50rem;
+}
+
+
+
+/* Next project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.next-project {
+  border-top: 1px solid #DFE1E5;
+  padding: 6rem 0;
+  margin: 2rem 0;
+  p {
+    margin-bottom: 1rem;
+>>>>>>> parent of 3c69d87... Style Update
   }
 }

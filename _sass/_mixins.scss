@@ -23,6 +23,7 @@
   }
 }
 
+<<<<<<< HEAD
 @mixin flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,4 +77,32 @@
   -moz-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
+=======
+$transition-1: color 200ms ease-out, border-bottom-color 200ms ease-out, border-bottom-width 200ms ease-out;
+
+@mixin transition-1() {
+  -webkit-transition: $transition-1;
+  -moz-transition: $transition-1;
+  -o-transition: $transition-1;
+  transition: $transition-1;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+
+@mixin title {
+    font-size: 3rem;
+    @include sm {
+      font-size: 5rem;
+      }
+}
+
+@mixin stroke {
+  border-bottom: 1px solid $tertirary;
+>>>>>>> parent of 3c69d87... Style Update
 }
