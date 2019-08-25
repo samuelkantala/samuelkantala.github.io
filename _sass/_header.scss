@@ -3,69 +3,48 @@ header {
   flex-shrink: 0;
 }
 
-.nav-section {
-  @include flex-box;
-  align-items: center;
+nav {
 
-  a {
-    @include link-style($primary, $primary-0, 2px);
-
-    &:hover,
-    &:focus,
-    &:active {
-      @include link-style($primary, $primary, 2px);
-    }
-  }
-
-  ul {
-    li {
-      display: inline;
-    }
-    li:first-child {
-      @include margin-r(2.5, 3rem, 3.5rem, 4rem, 5rem);
-    }
-  }
 }
 
-.nav-section-first {
-  justify-content: flex-start;
-}
 
-.nav-section-second {
+.header-page {
   justify-content: flex-end;
 }
 
-
-.nav-section {
-  width: 50%;
+.header-home {
+  justify-content: flex-start;
 }
 
-.header {
-  top: 0;
-  @include font-sm;
-  @include margin-t(2.5, 3rem, 3.5rem, 4rem, 5rem);
-  @include margin-b(5, 6rem, 7rem, 8rem, 10rem);
-}
-
-.initials {
-  color: $secondary;
-  cursor: default;
-}
-
-/*
-.header-sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background-color: $background-opacity;
-  align-items: center;
-  height : 6rem;
-  margin-bottom: 10vh;
-  @include font-sm;
-  @include vertical-b(10vh, 10vh, 10vh, 10vh, 10vh);
+.close {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/svg/close32.svg);
 
   @include lg {
-    height: 8rem;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(/assets/svg/close48.svg);
+  };
+}
+
+
+.header {
+  align-items: center;
+  height : 6rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 10vh;
+
+  @include md {
+
+    height: 9rem;
+    margin-bottom: 20vh;
+  }
+
+  @include lg {
+
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
-*/

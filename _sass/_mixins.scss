@@ -30,159 +30,50 @@
   display: flex;
 }
 
-/* margins
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@mixin margin-t ($tde, $txs, $tsm, $tmd, $tlg) {
-  margin-top: $tde;
-
-  @include xs {
-    margin-top: $txs; }
-  @include sm {
-    margin-top: $tsm; }
-  @include md {
-    margin-top: $tmd; }
-  @include lg {
-    margin-top: $tlg; }
-}
-
-@mixin margin-b ($bde, $bxs, $bsm, $bmd, $blg) {
-  margin-bottom: $bde;
-
-  @include xs {
-    margin-bottom: $bxs; }
-  @include sm {
-    margin-bottom: $bsm; }
-  @include md {
-    margin-bottom: $bmd; }
-  @include lg {
-    margin-bottom: $blg; }
-}
-
-@mixin margin-r ($rde, $rxs, $rsm, $rmd, $rlg) {
-  margin-right: $rde;
-
-  @include xs {
-    margin-right: $rxs; }
-  @include sm {
-    margin-right: $rsm; }
-  @include md {
-    margin-right: $rmd; }
-  @include lg {
-    margin-right: $rlg; }
-}
-
-@mixin margin-l ($lde, $lxs, $lsm, $lmd, $llg) {
-  margin-left: $lde;
-
-  @include xs {
-    margin-left: $lxs; }
-  @include sm {
-    margin-left: $lsm; }
-  @include md {
-    margin-left: $lmd; }
-  @include lg {
-    margin-left: $llg; }
-}
-
-
-/* fonts
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@mixin font-sm {
-  font-size: 0.875rem;
-  line-height: 1.333;
-
-  @include xs {
-    font-size: 1rem;
-  }
-  @include sm {}
-
-  @include md {}
-
-  @include lg {
-    font-size: 1.25rem;
-  }
-}
-
-<<<<<<< HEAD
-@mixin font-md {
-  font-size: 1rem;
-  line-height: 1.125;
-  letter-spacing: -.025em;
-
-  @include xs {
-    font-size: 1.125rem;
-  }
+@mixin vertical-rythm-1 {
+  margin-bottom: 1rem;
 
   @include sm {
-    font-size: 1.25rem;
-  }
-
+    margin-bottom: 1.5rem; }
   @include md {
-    font-size: 1.5rem;
-  }
-
+    margin-bottom: 2rem; }
   @include lg {
-    font-size: 2rem;
-  }
+    margin-bottom: 2.5rem; }
 }
 
-<<<<<<< HEAD
+@mixin content-end {
+    margin-bottom: 4rem;
+    @include sm {
+      margin-bottom: 6rem; }
+    @include md {
+      margin-bottom: 8rem; }
+    @include lg {
+      margin-bottom: 10rem; }
+}
 
-@mixin font-lg {
-  font-size: 1.125rem;
-  line-height: 1.2em;
-  letter-spacing: -.025em;
+@mixin big-text {
+  font-size: 1.5rem;
+  line-height: calc(1.25em + (.25rem));
 
   @include xs {
-    font-size: 1.25rem;
-  }
+    font-size: 1.75rem; }
 
   @include sm {
-    font-size: 1.5rem;
-  }
+    font-size: 2rem; }
 
   @include md {
-    font-size: 2rem;
-  }
+    font-size: 2.5rem; }
 
   @include lg {
-    font-size: 2.5rem;
-  }
+    font-size: 3rem; }
 }
 
-/* misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@mixin link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
+@mixin p-link-style ($p-link-color, $p-link-underline-color, $p-link-underline-width) {
   color: $p-link-color;
   border-bottom: $p-link-underline-width solid $p-link-underline-color;
   -webkit-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   -moz-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   -o-transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
   transition: border-bottom-color 200ms ease-out, color 200ms ease-out;
-=======
-=======
->>>>>>> parent of bed7fdc... Save
-
-@mixin title {
-    color: red;
-    font-size: 3rem;
-    @include sm {
-      font-size: 5rem;
-      }
-}
-
-@mixin padding-spacer {
-  padding: 2rem 0 4rem 0;
-  border-bottom: 1px solid $tertirary;
-  @include md {
-  padding: 3rem 0 6rem 0;
-  border-bottom: 1px solid $tertirary;
- }
-<<<<<<< HEAD
->>>>>>> parent of bed7fdc... Save
-=======
->>>>>>> parent of bed7fdc... Save
 }

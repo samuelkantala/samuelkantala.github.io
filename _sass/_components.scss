@@ -4,191 +4,76 @@
   color: $secondary;
 }
 
-.color-secondary {
-  color: $secondary;
-}
-
-<<<<<<< HEAD
-.color-primary {
-  color: $primary;
-=======
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
-  margin-bottom: calc(2rem + 20vh);
-  a {
-    text-decoration: none;
-  }
-  a:visited,
-  a:link {
-    text-decoration: none;
-    color: #17181A;
-  }
-  @include md {
-    height: 7rem;
-  }
->>>>>>> parent of bed7fdc... Save
-}
-
-.font-lg {
-  @include font-lg;
-  cursor: default;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-.rip {
-  color: $primary;
-  cursor: not-allowed;
-}
-=======
->>>>>>> parent of bed7fdc... Save
-=======
->>>>>>> parent of bed7fdc... Save
-
-a.link-inline, a.link-standard
-  {
-  color: $primary;
-}
-
-.downwards-arrow {
-  vertical-align: -7.5%;
-}
-
-/* collection
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-<<<<<<< HEAD
-.work-collection {
-=======
-.intro {
-  margin: 4rem 0 8rem 0;
-  h1 {
-    font-size: calc(1.5rem + .05*(100vw - 20rem));
-    line-height: 1.25em; }
-  @include sm {
-    h1 {
-      line-height: 1.125em;
-      font-size: calc(3rem + .02*(100vw - 48rem)); }
-  }
-}
->>>>>>> parent of bed7fdc... Save
-
-  .image-16-9 {
-    @include margin-b (0.5rem, 0.5rem, 0.75rem, 1rem, 1.5rem);
-  }
-
-  .work-item {
-    @include margin-b (4rem, 4rem, 5rem, 6rem, 8rem);
-  }
-}
-
-/* project
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-<<<<<<< HEAD
-.project {
-=======
-.title {
-  margin-bottom: 2rem;
-  @include title;
-}
-
-.divider {
-  height: 1rem;
-  border-top: 1px solid $tertirary;
-}
->>>>>>> parent of bed7fdc... Save
-
-  .project-cover {
-    align-items: flex-start;
-
-<<<<<<< HEAD
-    h1 {
-      @include margin-b (1.6875rem, 1.96875rem, 2.25rem, 3.375rem, 5.0625rem);
-
-<<<<<<< HEAD
-      @include sm {
-      max-width: 95%;
-      }
-
-      @include lg {
-      max-width: 90%;
-      }
-    }
-  }
-
-  .project-text {
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      @include margin-b (1.166rem, 1.333rem, 1.333rem, 1.333rem, 1.499rem);
-    }
-  }
-
-  .image-16-9,
-  .project-text {
-    @include margin-b (1rem, 2rem, 3rem, 4rem, 5rem);
-  }
-
-}
-
-/* images
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.image-16-9 {
-  width: 100%;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 /* Home
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.home-cover {
-=======
-.secondary {
-  color: $secondary;
-}
-
-=======
->>>>>>> parent of bed7fdc... Save
-/* Project
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-.about-header {
-  @include padding-spacer;
-
-  .meta {
-    margin-bottom: 2rem;
-    color: $secondary;
-    ul {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-    li {
-      margin: 0;
-    }
-  }
->>>>>>> parent of bed7fdc... Save
+.cover {
 
   align-items: flex-start;
-  @include margin-b (4rem, 6rem, 8rem, 10rem, 12rem);
+
+  h1 {
+    margin-bottom: 4rem;
+  }
+
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+.home {
+
+  .links {
+    padding: 2rem 0;
+    flex-shrink: 0;
+  }
+
+  .readmore {
+    color: $accent;
+    display: inline-block;
+  }
+
+}
+
+.greetings {
+
+  flex: 1 0 auto;
+
+  p {
+    @include big-text;
+  }
+
+  .previous-2 {
+    text-decoration: line-through;
+    color: #C0C4CC;
+  }
+
+  .previous {
+    position: relative;
+  }
+
+  .previous::before {
+    content: '';
+    border-bottom: 1px solid $primary;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  .work {
+    @include p-link-style($primary, $secondary, 1px);
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include p-link-style($accent, $accent, 1px);
+    }
+  }
+
+  .readmore {
+    color: $accent;
+    display: inline-block;
+  }
+}
 
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -197,40 +82,40 @@ a.link-inline, a.link-standard
 .about,
 .project {
 
+  p {
+    max-width: 32rem;
+  }
+
+  @include sm {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+
+  @include md {
+    p {
+      max-width: none;
+    }
+  }
+
+  @include lg {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+.home,
+.about {
   @include flex-box;
   flex-direction: column;
+}
 
-  @include font-sm;
-
-  @include margin-b (4rem, 4rem, 5rem, 6rem, 8rem);
-
-=======
 .sub-section {
-  @include padding-spacer;
+  margin-bottom: 4rem;
+
+  @include lg {
+    margin-bottom: 6rem; }
 }
 
-=======
-.sub-section {
-  @include padding-spacer;
-}
-
->>>>>>> parent of bed7fdc... Save
-.experience,
-.education {
-  ul{
-    margin-bottom: 1rem;
-  }
-  li:last-child {
-    color: $secondary;
-  }
-}
-
-.awards {
-  li {
-    margin-bottom: 1rem;
-  }
->>>>>>> parent of bed7fdc... Save
-}
 
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -238,23 +123,26 @@ a.link-inline, a.link-standard
 .about {
 }
 
-.profile,
+.about-header,
 .experience,
 .awards,
 .credits,
 .connect {
-  @include margin-b (4rem, 4rem, 4rem, 4rem, 6rem);
 
   .label {
     display: inline-block;
-    font-variant-ligatures: discretionary-ligatures; /* Ligatures +3 */
-    -moz-font-feature-settings: "dlig";
-    -webkit-font-feature-settings: "dlig";
-    font-feature-settings: "dlig";
+    margin-bottom: 1.5rem;
   }
 
-  ul, .label {
-    @include margin-b (1.166rem, 1.333rem, 1.333rem, 1.333rem, 1.499rem);
+  ul {
+    margin-bottom: 1.5rem;
+  }
+
+  @include lg {
+
+    ul, .label {
+      margin-bottom: 2rem; }
+
   }
 }
 
@@ -266,6 +154,10 @@ a.link-inline, a.link-standard
       color: $primary;
     }
   }
+}
+
+.connect {
+  padding-bottom: 2rem;
 }
 
 .credits {
