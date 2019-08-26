@@ -41,15 +41,33 @@ header {
 }
 
 .header {
+  position: sticky;
+  position: -webkit-sticky;
+  align-items: center;
   top: 0;
+  height: 6rem;
   @include font-sm;
-  @include margin-t(2.5, 3rem, 3.5rem, 4rem, 5rem);
   @include margin-b(5, 6rem, 7rem, 8rem, 10rem);
+
+  @include lg {
+    height: 8rem;
+  }
 }
 
 .initials {
   color: $secondary;
   cursor: default;
+}
+
+.header-page {
+  justify-content: flex-end;
+}
+
+.close {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/svg/arrow32.svg);
+  fill: #fff;
 }
 
 /*
@@ -62,7 +80,6 @@ header {
   height : 6rem;
   margin-bottom: 10vh;
   @include font-sm;
-  @include vertical-b(10vh, 10vh, 10vh, 10vh, 10vh);
 
   @include lg {
     height: 8rem;

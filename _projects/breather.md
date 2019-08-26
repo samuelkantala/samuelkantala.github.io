@@ -18,8 +18,6 @@ images:
   - ../assets/images/breather_3.png
   - ../assets/images/breather_4.png
   - ../assets/images/breather_5.png
-order: 1
-prev-link: /spotify-business
-next-link: /soundtrack
+order: 3
 ---
 From 2017 to 2018 I worked as senior product designer on the experience team at the Breather HQ in Montreal. During that time, I designed and lead product initiatives focusing on how users discover and utilize Breather’s workspaces. Highlights include; the redesign of Breather’s web platform and mobile applications by implementing a reliable product design system, improving the search and booking experience, and contributing to business models /passport/ and /month+/.

@@ -4,7 +4,7 @@
 <body>
   <article class="project container-fluid">
 
-    {% include header-project.html %}
+    {% include header-page.html %}
 
     <section class="project-cover">
       <div class="row">
@@ -35,7 +35,7 @@
     <section class="project-content">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          {{ content }}
+          {{ page.content }}
         </div>
       </div>
     </section>
@@ -48,6 +48,34 @@
             {{ credit }}
           </p>
           {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="next-project">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+          {% if page.next %}
+            <a href="{{ page.next.url }}">
+              <p>
+                Next project
+              </p>
+              <p>
+                {{ page.next.title }}
+              </p>
+              <p>
+                {{ page.next.subtitle }}
+              </p>
+            </a>
+          {% else %}
+            <a href="/">
+              <p>
+                Back to index
+              </p>
+            </a>
+          {% endif %}
+
         </div>
       </div>
     </section>

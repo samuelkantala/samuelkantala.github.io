@@ -17,7 +17,6 @@ images:
   - ../assets/images/soundtrack-2_4.png
   - ../assets/images/soundtrack-2_5.png
 order: 2
-prev-link: /spotify-business
 next-link: /soundtrack
 ---
 During the spring of 2018, I was invited to work on the initial phases of redesigning Soundtrack. I explored ways to bring the new brand identity to life within the product ecosystem, and later worked on the design and implementation.

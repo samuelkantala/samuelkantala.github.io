@@ -1,0 +1,11 @@
+{% assign projects = (site.projects | sort: 'order') %}
+  {% for project in projects %}
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <a href="{{ project.permalink }}">
+          <p>{{ project.title }}</p>
+          <p>{{ project.subtitle }}</p>
+        </a>
+      </div>
+    </div>
+  {% endfor %}

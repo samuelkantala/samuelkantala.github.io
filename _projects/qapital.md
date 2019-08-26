@@ -17,7 +17,5 @@ images:
   - ../assets/images/breather_4.png
   - ../assets/images/breather_5.png
 order: 1
-prev-link: /spotify-business
-next-link: /soundtrack
 ---
 I worked with Qapital’s product team on designing and launching new features as well as large scale improvements. Notable contributions include implementing a new scalable design system, /Money Missions/ – challenges that help users think a bit deeper about spending, and /If This Then That Rules/ – save with the internet of things.
