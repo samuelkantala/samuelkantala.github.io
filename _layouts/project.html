@@ -8,35 +8,48 @@
 
     <section class="project-cover">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h1>{{ page.title }}<br><span class="secondary">{{ page.subtitle }}</span></h1>
-        </div>
-      </div>
-      <div class="image-16-9">
-        <img src="{{ page.cover }}">
-      </div>
-    </section>
-
-    <section class="project-text">
-      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <ul class="secondary">
-            <li>{{ page.years }}</li>
-            <li>{{ page.role }}</li>
-          </ul>
+          <h1>{{ page.title }}</h1>
+          <h1><span class="secondary">{{ page.subtitle }}</span></h1>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        {{ content }}
+          <p>
+          {{ page.description }}
+          </p>
         </div>
       </div>
     </section>
 
     <section class="project-images">
-      {% for image in page.images %}
-      <div class="image-16-9">
-        <img src="{{ image }}">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          {% for image in page.images %}
+          <div class="image-16-9">
+            <img src="{{ image }}">
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      {% endfor %}
+    </section>
+
+    <section class="project-content">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {{ content }}
+        </div>
+      </div>
+    </section>
+
+    <section class="project-credits">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          {% for credit in page.credits %}
+          <p>
+            {{ credit }}
+          </p>
+          {% endfor %}
+        </div>
+      </div>
     </section>
 
   </article>

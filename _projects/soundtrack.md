@@ -1,19 +1,24 @@
 ---
 layout: project
 permalink: /soundtrack
-title: soundtrack
-subtitle: the world’s leading commercial music streaming service
-years: 2015 - 2017
-role: product designer
-cover: ../assets/images/soundtrack-1.png
+title: Soundtrack
+subtitle: Kill bad background music
+description: Soundtrack is a commercial music streaming service launched in 2016, by Spotify-backed company, Soundtrack Your Brand. It’s a product built from the ground up to help brands grow their businesses through music. In addition, the unique licensing and compensation model makes sure artists and composers get paid accurately.
+credits:
+  - Caitlin Sullivan
+  - Gustav Arnetz
+  - Henrik Engdahl
+  - Joel Brosjö
+  - Martin Tägtström
+  - Niklas Alvarsson
+  - Patrik Axelsson
 images:
-  - ../assets/images/test-3.jpg
-  - ../assets/images/test-2.jpg
-  - ../assets/images/test-1.jpg
-order: 2
-prev-link: /breather
-next-link: /spotify-business
+  - ../assets/images/soundtrack_1.png
+  - ../assets/images/soundtrack_2.png
+  - ../assets/images/soundtrack_3.png
+  - ../assets/images/soundtrack_4.png
+order: 3
+prev-link: /spotify-business
+next-link: /soundtrack
 ---
-Soundtrack is a music streaming service that amplifies experiences in commercial and public spaces. It was launched in 2016 by Spotify-backed startup, Soundtrack Your Brand.
-
-As part of the team that just prior had created Spotify Business, I went on to work on Soundtrack. We set out with the high ambition to change the entire commercial music industry.
+I worked on Soundtrack from initial concept in 2015, through launch,  and until 2017. I was responsible for designing Soundtracks back office and  consumer facing mobile applications. Many of the design challenges I worked on were related to managing music; from individual users creating soundtracks, to global companies looking for a coherent brand sound across markets.
