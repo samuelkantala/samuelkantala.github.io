@@ -1,74 +1,102 @@
 header {
-  @include flex-box;
-  flex-shrink: 0;
 }
 
-.nav-section {
-  @include flex-box;
-  align-items: center;
+.header {
 
-  a {
+  align-items: center;
+  top: 0;
+  background-color: $background;
+  @include font-sm;
+  @include margin-b(6rem, 6rem, 6rem, 6rem, 6rem);
+
+  @include md {
+    position: sticky;
+    position: -webkit-sticky;
+  }
+
+}
+
+.underline-effect {
+
     @include link-style($primary, $primary-0, 2px);
 
     &:hover,
     &:focus,
     &:active {
-      @include link-style($primary, $primary, 2px);
+      @include link-style($primary,$primary, 2px);
     }
-  }
-
-  ul {
-    li {
-      display: inline;
-    }
-    li:first-child {
-      @include margin-r(2.5, 3rem, 3.5rem, 4rem, 5rem);
-    }
-  }
 }
 
-.nav-section-first {
-  justify-content: flex-start;
-}
+.underline-on {
 
-.nav-section-second {
-  justify-content: flex-end;
+    @include link-style($primary, $primary, 2px);
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include link-style($primary,$primary, 2px);
+    }
 }
 
 
 .nav-section {
-  width: 50%;
-}
+  @include flex-box;
+  @include margin-t(2rem, 2rem, 2rem, 2rem, 2rem);
+  @include margin-b(2rem, 2rem, 2rem, 2rem, 2rem);
 
-.header {
-  position: sticky;
-  position: -webkit-sticky;
-  align-items: center;
-  top: 0;
-  height: 6rem;
-  @include font-sm;
-  @include margin-b(5, 6rem, 7rem, 8rem, 10rem);
+  align-items: top;
+  @include md {
+    align-items: center;
+  }
 
-  @include lg {
-    height: 8rem;
+
+  ul {
+
+    li {
+      @include margin-r(0rem, 0rem, 0rem, 2rem, 3rem);
+      @include margin-b(1rem, 1rem, 1rem, 0, 0);
+    }
+
+    @include md {
+      li {
+        display: inline;
+      }
+    }
   }
 }
 
-.initials {
-  color: $secondary;
+.right {
+
+  @include md {
+  justify-content: flex-end;
+  }
+}
+
+.my-name {
   cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .header-page {
   justify-content: flex-end;
 }
 
-.close {
+.bck {
   width: 2rem;
   height: 2rem;
-  background-image: url(/assets/svg/arrow32.svg);
-  fill: #fff;
+  background-image: url(/assets/svg/arrow-32-bck.svg);
 }
+
+.fwd {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/assets/svg/arrow-32-fwd.svg);
+}
+
 
 /*
 .header-sticky {

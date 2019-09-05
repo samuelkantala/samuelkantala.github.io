@@ -16,6 +16,7 @@ images:
   - ../assets/images/spotify-business_1.png
   - ../assets/images/spotify-business_2.png
   - ../assets/images/spotify-business_3.png
-order: 5
+order: 4
+footer-link: /archive
 ---
 I joined the team at a very early stage and was part of taking Spotify Business from initial concept to a fully profitable product.

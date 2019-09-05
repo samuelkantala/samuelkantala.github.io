@@ -12,11 +12,6 @@
   color: $primary;
 }
 
-.font-lg {
-  @include font-lg;
-  cursor: default;
-}
-
 .rip {
   color: $primary;
   cursor: not-allowed;
@@ -29,81 +24,6 @@ a.link-inline, a.link-standard
 
 .downwards-arrow {
   vertical-align: -7.5%;
-}
-
-/* collection
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.work-collection {
-
-  .image-16-9 {
-    @include margin-b (0.5rem, 0.5rem, 0.75rem, 1rem, 1.5rem);
-  }
-
-  .work-item {
-    @include margin-b (4rem, 4rem, 5rem, 6rem, 8rem);
-  }
-}
-
-/* project
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.project {
-
-  .project-cover {
-    align-items: flex-start;
-
-    h1 {
-      @include margin-b (1.6875rem, 1.96875rem, 2.25rem, 3.375rem, 5.0625rem);
-
-      @include sm {
-      max-width: 95%;
-      }
-
-      @include lg {
-      max-width: 90%;
-      }
-    }
-  }
-
-  .project-text {
-
-    p:last-child {
-      margin-bottom: 0;
-    }
-
-    ul {
-      @include margin-b (1.166rem, 1.333rem, 1.333rem, 1.333rem, 1.499rem);
-    }
-  }
-
-  .image-16-9,
-  .project-text {
-    @include margin-b (1rem, 2rem, 3rem, 4rem, 5rem);
-  }
-
-}
-
-/* images
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.image-16-9 {
-  width: 100%;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Home
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.home-cover {
-
-  align-items: flex-start;
-  @include margin-b (4rem, 6rem, 8rem, 10rem, 12rem);
 }
 
 
@@ -123,44 +43,172 @@ a.link-inline, a.link-standard
 
 }
 
+
+/* Home
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.home {
+
+  .intro,
+  .collection {
+    @include margin-b (4rem, 4rem, 4rem, 6rem, 6rem);
+  }
+
+  .intro {
+    @include font-sm;
+    p {
+      max-width: 36rem;
+    }
+  }
+
+  .collection {
+    @include font-sm;
+
+      .collection-item {
+          @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
+
+          &:hover,
+          &:focus,
+          &:active {
+          }
+      }
+  }
+
+
+  .collection-item {
+    @include flex-box;
+    align-items: center;
+    justify-content: space-between;
+    @include margin-b (4rem, 4rem, 4rem, 4rem, 4rem);
+  }
+
+}
+
+
+
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .about {
-}
 
-.profile,
-.experience,
-.awards,
-.credits,
-.connect {
-  @include margin-b (4rem, 4rem, 4rem, 4rem, 6rem);
+  .profile,
+  .experience,
+  .awards,
+  .credits,
+  .connect {
+    @include margin-b (4rem, 4rem, 4rem, 6rem, 6rem);
 
-  .label {
-    display: inline-block;
-    font-variant-ligatures: discretionary-ligatures; /* Ligatures +3 */
-    -moz-font-feature-settings: "dlig";
-    -webkit-font-feature-settings: "dlig";
-    font-feature-settings: "dlig";
-  }
+    .label {
+      display: inline-block;
+    }
 
-  ul, .label {
-    @include margin-b (1.166rem, 1.333rem, 1.333rem, 1.333rem, 1.499rem);
-  }
-}
-
-.awards,
-.experience {
-  li {
-      color: $secondary;
-    &:first-child {
-      color: $primary;
+    ul, .label {
+      @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
     }
   }
+
+  .profile {
+    p {
+      max-width: 36rem;
+      @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
+    }
+  }
+
+  .awards,
+  .experience {
+    li {
+        color: $secondary;
+      &:first-child {
+        color: $primary;
+      }
+    }
+  }
+
+  .credits {
+    .team {
+      color: $secondary;
+    }
+  }
+
 }
 
-.credits {
-  .team {
-    color: $secondary;
+
+/* project
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.project {
+
+  .project-cover,
+  .project-credits {
+
+    @include margin-b (4rem, 4rem, 4rem, 8rem, 8rem);
+
+  }
+
+  .project-cover {
+    p {
+    @include margin-t (1rem, 1rem, 1rem, 2rem, 2rem);
+    }
+  }
+
+  .project-content {
+    @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
+  }
+  .project-images {
+    @include margin-b (0rem, 0rem, 0rem, 0rem, 0rem);
+  }
+
+  .project-cover,
+  .project-content,
+  .project-credits {
+
+    h1 {
+      @include font-md;
+    }
+
+    p {
+      max-width: 36rem;
+      @include font-sm;
+    }
+
+  }
+
+  .project-images {
+    .image-16-9 {
+      @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
+    }
+  }
+
+  .project-content {
+
+  }
+
+  .project-credits {
+
+  }
+
+  .project-next {
+
+    @include font-md;
+
+    .next-link {
+      @include flex-box;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+/* images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.image-16-9 {
+  width: 100%;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }

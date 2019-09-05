@@ -2,10 +2,7 @@
   {% for project in projects %}
       <a href="{{ project.permalink }}">
         <div class="collection-item">
-          <ul>
-            <li>{{ project.title }}</li>
-            <li><span class="secondary">{{ project.subtitle }} →</span></li>
-          </ul>
+            <span class="underlined">{{ project.title }}  —  {{ project.subtitle }}</span>
         </div>
       </a>
   {% endfor %}

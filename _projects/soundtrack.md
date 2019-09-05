@@ -17,6 +17,7 @@ images:
   - ../assets/images/soundtrack_2.png
   - ../assets/images/soundtrack_3.png
   - ../assets/images/soundtrack_4.png
-order: 4
+order: 3
+footer-link: /spotify-business
 ---
 I worked on Soundtrack from initial concept in 2015, through launch,  and until 2017. I was responsible for designing Soundtracks back office and  consumer facing mobile applications. Many of the design challenges I worked on were related to managing music; from individual users creating soundtracks, to global companies looking for a coherent brand sound across markets.
