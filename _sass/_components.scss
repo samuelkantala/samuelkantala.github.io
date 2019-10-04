@@ -1,45 +1,29 @@
-@import 'header';
 
 .secondary {
   color: $secondary;
 }
 
-.color-secondary {
-  color: $secondary;
-}
+.underline-effect {
 
-.color-primary {
-  color: $primary;
-}
+  @include link-style($primary, $primary-0, 2px);
 
-.rip {
-  color: $primary;
-  cursor: not-allowed;
+  &:hover,
+  &:focus,
+  &:active {
+    @include link-style($primary,$primary, 2px);
+  }
 }
-
-a.link-inline, a.link-standard
-  {
-  color: $primary;
-}
-
-.downwards-arrow {
-  vertical-align: -7.5%;
-}
-
 
 /* Containers
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .home,
-.about,
-.project {
+.about {
 
   @include flex-box;
   flex-direction: column;
 
-  @include font-sm;
-
-  @include margin-b (4rem, 4rem, 5rem, 6rem, 8rem);
+  @include font-dynamic;
 
 }
 
@@ -49,37 +33,52 @@ a.link-inline, a.link-standard
 
 .home {
 
-  .intro,
-  .collection {
-    @include margin-b (4rem, 4rem, 4rem, 6rem, 6rem);
+  cursor: default;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  a {
+
+    cursor: pointer;
+
+    @include link-style($primary, $primary-0, 2px);
+
+    &:hover,
+    &:focus,
+    &:active {
+      @include link-style($primary,$primary, 2px);
+    }
+
   }
 
   .intro {
-    @include font-sm;
-    p {
-      max-width: 36rem;
+
+    @include margin-t (4rem, 4rem, 6rem, 6rem, 6rem);
+    @include margin-b (8rem, 8rem, 8rem, 10rem, 12rem);
+
+    @include sm {
+      max-width: 90%;
+    }
+
+    @include md {
+      max-width: 85%;
+    }
+
+    a {
+      color: $primary;
     }
   }
 
-  .collection {
-    @include font-sm;
-
-      .collection-item {
-          @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
-
-          &:hover,
-          &:focus,
-          &:active {
-          }
+  .navigation {
+    ul {
+      li {
+        @include margin-r (0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem);
+        display: inline;
       }
-  }
-
-
-  .collection-item {
-    @include flex-box;
-    align-items: center;
-    justify-content: space-between;
-    @include margin-b (4rem, 4rem, 4rem, 4rem, 4rem);
+    }
   }
 
 }
@@ -96,7 +95,6 @@ a.link-inline, a.link-standard
   .awards,
   .credits,
   .connect {
-    @include margin-b (4rem, 4rem, 4rem, 6rem, 6rem);
 
     .label {
       display: inline-block;
@@ -108,107 +106,11 @@ a.link-inline, a.link-standard
   }
 
   .profile {
+
+
     p {
-      max-width: 36rem;
       @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
     }
   }
 
-  .awards,
-  .experience {
-    li {
-        color: $secondary;
-      &:first-child {
-        color: $primary;
-      }
-    }
-  }
-
-  .credits {
-    .team {
-      color: $secondary;
-    }
-  }
-
-}
-
-
-/* project
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.project {
-
-  .project-cover,
-  .project-credits {
-
-    @include margin-b (4rem, 4rem, 4rem, 8rem, 8rem);
-
-  }
-
-  .project-cover {
-    p {
-    @include margin-t (1rem, 1rem, 1rem, 2rem, 2rem);
-    }
-  }
-
-  .project-content {
-    @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
-  }
-  .project-images {
-    @include margin-b (0rem, 0rem, 0rem, 0rem, 0rem);
-  }
-
-  .project-cover,
-  .project-content,
-  .project-credits {
-
-    h1 {
-      @include font-md;
-    }
-
-    p {
-      max-width: 36rem;
-      @include font-sm;
-    }
-
-  }
-
-  .project-images {
-    .image-16-9 {
-      @include margin-b (2rem, 2rem, 2rem, 3rem, 3rem);
-    }
-  }
-
-  .project-content {
-
-  }
-
-  .project-credits {
-
-  }
-
-  .project-next {
-
-    @include font-md;
-
-    .next-link {
-      @include flex-box;
-      align-items: center;
-      justify-content: space-between;
-    }
-  }
-
-}
-
-/* images
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.image-16-9 {
-  width: 100%;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
 }

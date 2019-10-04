@@ -1,8 +1,7 @@
-$primary: rgba(23, 24, 26, 1);
-$primary-0: rgba(23, 24, 26, 0);
-$secondary: rgba(23, 24, 26, 1);
-$background: rgba(255, 255, 255, 1);
-$background-opacity: rgba(255, 255, 255, 0);
+$primary: rgba(255, 255, 255, 1);
+$primary-0: rgba(255, 255, 255, 0);
+$secondary: rgba(255, 255, 255, 0.33);
+$background: rgba(0, 0, 0, 1);
 
 $xs: 22em;
 $sm: 30em;
@@ -10,6 +9,6 @@ $md: 48em;
 $lg: 64em;
 
 $container-width-sm: 90%;
-$container-width-md: 90%;
-$container-width-lg: 90%;
-$container-width-max: 64rem;
+$container-width-md: 80%;
+$container-width-lg: 80%;
+$container-width-max: 50rem;

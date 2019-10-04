@@ -1,8 +1,0 @@
-{% assign projects = (site.projects | sort: 'order') %}
-  {% for project in projects %}
-      <a href="{{ project.permalink }}">
-        <div class="collection-item">
-            <span class="underlined">{{ project.title }}  —  {{ project.subtitle }}</span>
-        </div>
-      </a>
-  {% endfor %}

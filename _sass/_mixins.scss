@@ -89,6 +89,28 @@
 /* fonts
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@mixin font-dynamic {
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+  @include xs {
+    font-size: 1rem;
+  }
+
+  @include sm {
+    font-size: 1.125rem;
+  }
+
+  @include md {
+    font-size: 1.25rem;
+  }
+
+  @include lg {
+    font-size: 1.5rem;
+  }
+}
+
+
 @mixin font-sm {
   font-size: 0.875rem;
   line-height: 1.5;
@@ -161,4 +183,12 @@
   -moz-transition: border-bottom-color 300ms ease-out, color 300ms ease-out;
   -o-transition: border-bottom-color 300ms ease-out, color 300ms ease-out;
   transition: border-bottom-color 300ms ease-out, color 300ms ease-out;
+}
+
+@mixin link-color ($set-link-color) {
+  color: $set-link-color;
+  -webkit-transition: color 300ms ease-out;
+  -moz-transition: color 300ms ease-out;
+  -o-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
 }
