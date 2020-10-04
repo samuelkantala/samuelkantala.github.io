@@ -3,6 +3,10 @@
   color: $secondary;
 }
 
+.primary {
+  color: $primary;
+}
+
 .underline-effect {
 
   @include link-style($primary, $primary-0, 2px);
@@ -33,6 +37,8 @@
 
 .home {
 
+  @include font-lg;
+
   cursor: default;
 
   -webkit-user-select: none;
@@ -44,12 +50,12 @@
 
     cursor: pointer;
 
-    @include link-style($primary, $primary-0, 2px);
+    @include link-style($inherit, $inherit, 0px);
 
     &:hover,
     &:focus,
     &:active {
-      @include link-style($primary,$primary, 2px);
+      @include link-style($primary, $primary, 0px);
     }
 
   }
@@ -67,9 +73,6 @@
       max-width: 85%;
     }
 
-    a {
-      color: $primary;
-    }
   }
 
   .navigation {

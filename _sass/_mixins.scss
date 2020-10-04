@@ -153,8 +153,8 @@
 
 @mixin font-lg {
   font-size: 1.125rem;
-  line-height: 1.5em;
-  letter-spacing: -.025em;
+  line-height: 1.25em;
+  letter-spacing: -.0125em;
 
   @include xs {
     font-size: 1.25rem;

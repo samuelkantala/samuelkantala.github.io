@@ -4,8 +4,8 @@ html {
 body {
   font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5rem;
-  font-weight: normal;
-  font-family: "grotesque", sans-serif;
+  font-weight: 400;
+  font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: antialiased;
   -moz-font-feature-settings:"kern" 1;
